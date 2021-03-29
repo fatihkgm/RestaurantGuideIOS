@@ -11,6 +11,7 @@ class Res3ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Mexi Restaurant"
 
         // Do any additional setup after loading the view.
     }

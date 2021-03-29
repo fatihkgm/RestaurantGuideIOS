@@ -425,10 +425,10 @@
             </objects>
             <point key="canvasLocation" x="1230.4347826086957" y="551.11607142857144"/>
         </scene>
-        <!--View Controller-->
+        <!--Res5 View Controller-->
         <scene sceneID="VTD-oP-8QF">
             <objects>
-                <viewController id="P31-1n-bwl" sceneMemberID="viewController">
+                <viewController id="P31-1n-bwl" customClass="Res5ViewController" customModule="RestaurantGuide_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="azl-df-Lay">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
