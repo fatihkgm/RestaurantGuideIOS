@@ -270,10 +270,10 @@
             </objects>
             <point key="canvasLocation" x="1320" y="-105"/>
         </scene>
-        <!--View Controller-->
+        <!--Res3 View Controller-->
         <scene sceneID="Iy3-Fl-zBu">
             <objects>
-                <viewController id="KLc-Fq-PTO" sceneMemberID="viewController">
+                <viewController id="KLc-Fq-PTO" customClass="Res3ViewController" customModule="RestaurantGuide_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m98-8K-zlO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -311,10 +311,10 @@
             </objects>
             <point key="canvasLocation" x="2103" y="-109"/>
         </scene>
-        <!--View Controller-->
+        <!--Res4 View Controller-->
         <scene sceneID="41u-Yc-atE">
             <objects>
-                <viewController id="m44-wm-Ydo" sceneMemberID="viewController">
+                <viewController id="m44-wm-Ydo" customClass="Res4ViewController" customModule="RestaurantGuide_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vz8-X1-42a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
