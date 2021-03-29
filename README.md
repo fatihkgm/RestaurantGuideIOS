@@ -1,6 +1,6 @@
 # RestaurantGuideIOS
 
-📌 PROJECT DESCRIPTION
+📌 PROJECT DESCRIPTION. 
 This project is a mobile application that will be built using swift. With the intended
 devices being IOS mobile. It is aimed at people in all age groups and will come to
 their aid whenever they are trying to choose a restaurant to go to. Our project will
