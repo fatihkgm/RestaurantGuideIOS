@@ -27,6 +27,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     func checkLocationService() {
         if CLLocationManager.locationServicesEnabled(){
             setupLocationManager()
+            checkLocationAuthorization()
             
         }else {
             
@@ -41,6 +42,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         case .denied:
             break
         case .notDetermined:
+            locationManager.requestWhenInUseAuthorization()
             break
         case .restricted:
             break
