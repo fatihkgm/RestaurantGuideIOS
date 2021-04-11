@@ -18,6 +18,8 @@
 		5287F26D26237FAB004CF1A4 /* map3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5287F26C26237FAB004CF1A4 /* map3ViewController.swift */; };
 		5287F27026238AEE004CF1A4 /* Map4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5287F26F26238AEE004CF1A4 /* Map4ViewController.swift */; };
 		5287F27326238FB8004CF1A4 /* map5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5287F27226238FB8004CF1A4 /* map5ViewController.swift */; };
+		5287F27726239485004CF1A4 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5287F27626239485004CF1A4 /* Accounts.framework */; };
+		5287F2792623948E004CF1A4 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5287F2782623948E004CF1A4 /* Social.framework */; };
 		52D9C43225EA02A50030402A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D9C43125EA02A50030402A /* AppDelegate.swift */; };
 		52D9C43425EA02A50030402A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D9C43325EA02A50030402A /* SceneDelegate.swift */; };
 		52D9C43625EA02A50030402A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D9C43525EA02A50030402A /* ViewController.swift */; };
@@ -38,6 +40,8 @@
 		5287F26C26237FAB004CF1A4 /* map3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = map3ViewController.swift; sourceTree = "<group>"; };
 		5287F26F26238AEE004CF1A4 /* Map4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map4ViewController.swift; sourceTree = "<group>"; };
 		5287F27226238FB8004CF1A4 /* map5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = map5ViewController.swift; sourceTree = "<group>"; };
+		5287F27626239485004CF1A4 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		5287F2782623948E004CF1A4 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		52D9C42E25EA02A50030402A /* RestaurantGuide_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantGuide_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D9C43125EA02A50030402A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52D9C43325EA02A50030402A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,17 +57,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5287F2792623948E004CF1A4 /* Social.framework in Frameworks */,
+				5287F27726239485004CF1A4 /* Accounts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5287F27526239485004CF1A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5287F2782623948E004CF1A4 /* Social.framework */,
+				5287F27626239485004CF1A4 /* Accounts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		52D9C42525EA02A50030402A = {
 			isa = PBXGroup;
 			children = (
 				52D9C43025EA02A50030402A /* RestaurantGuide_IOS */,
 				52D9C42F25EA02A50030402A /* Products */,
+				5287F27526239485004CF1A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

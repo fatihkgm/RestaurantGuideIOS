@@ -8,8 +8,11 @@
 import UIKit
 import MapKit
 import CoreLocation
+import Social
+
 class Res1ViewController: UIViewController {
 
+    
     @IBOutlet weak var mapView: MKMapView!
     let locationManager = CLLocationManager()
     var regionInMetters: Double  = 10000
