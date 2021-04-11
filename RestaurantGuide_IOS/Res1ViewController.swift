@@ -6,12 +6,15 @@
 //
 
 import UIKit
+import MapKit
+class Res1ViewController: UIViewController, MKMapViewDelegate {
 
-class Res1ViewController: UIViewController {
-
+    @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "McDonals"
+        mapView.delegate=self
+        
 
         // Do any additional setup after loading the view.
     }
