@@ -26,6 +26,23 @@ class Res1ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
   
+    @IBAction func facebookButton(_ sender: Any) {
+        if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeFacebook) {
+
+            let facebookShare = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+            if let facebookShare = facebookShare{
+                    facebookShare.setInitialText("Nice Tutorials of iOSDevCenters")
+                    facebookShare.add(URL(string: "https://iosdevcenters.blogspot.com"))
+                    self.present(facebookShare, animated: true, completion: nil)
+                }
+            } else {
+                  print("Not Available")
+            }
+    }
+  
+    
+    
+    
     func setupLocationManager(){
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest

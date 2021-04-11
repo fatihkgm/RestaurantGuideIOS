@@ -208,14 +208,6 @@
                                 <rect key="frame" x="104" y="296" width="206" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cOq-M7-0bQ">
-                                <rect key="frame" x="36" y="334" width="342" height="133"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">McDonald's Corporation is an American fast food company, founded in 1940 as a restaurant operated by Richard and Maurice McDonald, in San Bernardino, California, United States</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="lug-1l-11j">
                                 <rect key="frame" x="118" y="846" width="32" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -264,6 +256,24 @@ Phone: (416) 596-2231
                                     <segue destination="0wy-GN-z2c" kind="show" id="Pdx-Xz-r9n"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDA-Zx-URK">
+                                <rect key="frame" x="119" y="843" width="44" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="facebookButton:" destination="K8Z-2y-zBD" eventType="touchUpInside" id="6wF-3N-mCp"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cOq-M7-0bQ">
+                                <rect key="frame" x="36" y="352" width="342" height="166.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">McDonald's Corporation is an American fast food company, founded in 1940 as a restaurant operated by Richard and Maurice McDonald, in San Bernardino, California, United StatesCanada is proud to be one of the world’s leading food service retailers. From coast to coast, we serve delicious choices to more than 2.5 million people in over 1,400 locations every day. We’re also more than just your local restaurant.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XHb-h5-qeC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -341,9 +351,9 @@ Phone: (416) 596-2231
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lMU-p5-iWh">
-                                <rect key="frame" x="48" y="382" width="342" height="133"/>
+                                <rect key="frame" x="48" y="382" width="342" height="233.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Some of the city’s best-known Italian restaurants have a cultivated ambiance one step below a private club on nonmembers’ night, which makes Ardo notable for its unfussy sophistication. It’s more for the not-for-tourists set than the social-media influencers.</string>
+                                <mutableString key="text">Some of the city’s best-known Italian restaurants have a cultivated ambiance one step below a private club on nonmembers’ night, which makes Ardo notable for its unfussy sophistication. It’s more for the not-for-tourists set than the social-media influencers.We’ve been growing with our communities and serving quality food at great value ever since. Today, McDonald’s Canada is proud to be one of the world’s leading food service retailers. From coast to coast, we serve delicious choices to more than 2.5 million people in over 1,400 locations every day. We’re also more than just your local restaurant.</mutableString>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -497,10 +507,10 @@ Phone: (416) 596-2231
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="obp-f6-Qnt">
-                                <rect key="frame" x="219" y="691" width="175" height="149"/>
+                                <rect key="frame" x="219" y="691" width="175" height="166.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Address: 356 Yonge St, Toronto, ON M5B 1S5  Hours: Open 24 Order: ubereats.com, doordash.com, mcdonalds.ca, skipthedishes.com
+                                <string key="text">Address: CNN Tower, Toronto, ON M5B 1S5  Hours: Open 24 Order: ubereats.com, doordash.com, mcdonalds.ca, skipthedishes.com
 Phone: (416) 596-2231
     </string>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -587,14 +597,6 @@ Phone: (416) 596-2231
                                 <rect key="frame" x="120" y="310" width="206" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Pdc-7R-Fgy">
-                                <rect key="frame" x="52" y="373" width="342" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">From the moment it debuted, Miku’s 180-seat dining room has been overrun—an advantage of being in the heart of the new office district south of the Gardiner. The kaiseki menu consists of cleverly combined exotica. One night, the kaiseki’s star course is a tiered plate of sushi: ocean trout with jalapeño and pink grapefruit, toro with funky black truffle, golden-eye snapper with kumquat compote, and shima-aji (mackerel) with okra and a dashi jelly—it was one of the most exciting things to happen to fish since Nemo reunited with his dad.</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="xeq-4f-FQA">
                                 <rect key="frame" x="118" y="846" width="32" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -623,10 +625,10 @@ Phone: (416) 596-2231
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PgW-O7-S9j">
-                                <rect key="frame" x="219" y="689" width="175" height="149"/>
+                                <rect key="frame" x="219" y="689" width="175" height="166.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Address: 356 Yonge St, Toronto, ON M5B 1S5  Hours: Open 24 Order: ubereats.com, doordash.com, mcdonalds.ca, skipthedishes.com
+                                <string key="text">Address: Toronto island, Toronto, ON M5B 1S5  Hours: Open 24 Order: ubereats.com, doordash.com, mcdonalds.ca, skipthedishes.com
 Phone: (416) 596-2231
     </string>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -643,6 +645,14 @@ Phone: (416) 596-2231
                                     <segue destination="Heh-jm-i0N" kind="show" id="MIM-F6-D2d"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Pdc-7R-Fgy">
+                                <rect key="frame" x="41" y="373" width="342" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">From the moment it debuted, Miku’s 180-seat dining room has been overrun—an advantage of being in the heart of the new office district south of the Gardiner. The kaiseki menu consists of cleverly combined exotica. One night, the kaiseki’s star course is a tiered plate of sushi: ocean trout with jalapeño and pink grapefruit, toro with funky black truffle, golden-eye snapper with kumquat compote, and shima-aji (mackerel) with okra and a dashi jelly—it was one of the most exciting things to happen to fish since Nemo reunited with his dad.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YpL-BL-zq6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -822,10 +832,10 @@ Phone: (416) 596-2231
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pdo-WX-j6W">
-                                <rect key="frame" x="211" y="693" width="175" height="149"/>
+                                <rect key="frame" x="211" y="693" width="175" height="166.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Address: 356 Yonge St, Toronto, ON M5B 1S5  Hours: Open 24 Order: ubereats.com, doordash.com, mcdonalds.ca, skipthedishes.com
+                                <string key="text">Address: Toronto Island, Toronto, ON M5B 1S5  Hours: Open 24 Order: ubereats.com, doordash.com, mcdonalds.ca, skipthedishes.com
 Phone: (416) 596-2231
     </string>
                                 <color key="textColor" systemColor="labelColor"/>
