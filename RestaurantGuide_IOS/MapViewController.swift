@@ -16,6 +16,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate=self
+        checkLocationService()
         // Do any additional setup after loading the view.
     }
     
@@ -48,16 +49,18 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             break
         case .authorizedAlways:
             break
-    }
   }
+ }
 }
+
 
 extension MapViewController:CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        <#code#>
+        //sas
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus){
-        
+        //sas
     }
 }
+
