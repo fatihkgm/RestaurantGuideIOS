@@ -6,12 +6,22 @@
 //
 
 import UIKit
+import MapKit
 
 class Res2ViewController: UIViewController {
 
+    @IBOutlet weak var mapView1: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Hasty Market"
+        
+        let annontation = MKPointAnnotation()
+        annontation.coordinate = CLLocationCoordinate2D(latitude: 43.67624135177184, longitude: -79.41120476126974)
+      
+        mapView1.addAnnotation(annontation)
+        
+        let region = MKCoordinateRegion(center: annontation.coordinate, latitudinalMeters: 100, longitudinalMeters: 100)
+        mapView1.setRegion(region, animated: true)
 
         // Do any additional setup after loading the view.
     }

@@ -381,12 +381,18 @@ Phone: (416) 596-2231
                                 <state key="normal" title="See On Map">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="iwx-xG-HY0" kind="show" id="Nqu-tq-Ctl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2NQ-Mh-PIm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="dHX-Hv-MDV"/>
+                    <connections>
+                        <outlet property="mapView1" destination="5qc-Sq-heX" id="Q7d-mD-gkv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AyZ-fj-ARC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -500,6 +506,35 @@ Phone: (416) 596-2231
             </objects>
             <point key="canvasLocation" x="3317" y="-291"/>
         </scene>
+        <!--Map3 View Controller-->
+        <scene sceneID="0FY-p3-2lw">
+            <objects>
+                <viewController id="j2E-Kq-rnl" customClass="map3ViewController" customModule="RestaurantGuide_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ocZ-jP-M9S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cUt-rB-bAI">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6nv-PL-99d"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cUt-rB-bAI" firstAttribute="trailing" secondItem="6nv-PL-99d" secondAttribute="trailing" id="1zL-eI-4fU"/>
+                            <constraint firstItem="cUt-rB-bAI" firstAttribute="top" secondItem="6nv-PL-99d" secondAttribute="top" id="62L-1b-pLC"/>
+                            <constraint firstItem="cUt-rB-bAI" firstAttribute="leading" secondItem="6nv-PL-99d" secondAttribute="leading" id="V1U-oc-fVf"/>
+                            <constraint firstAttribute="bottom" secondItem="cUt-rB-bAI" secondAttribute="bottom" id="lfd-op-Lcx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView2" destination="cUt-rB-bAI" id="Cvf-HJ-kGm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uSH-SG-XXr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3986.9565217391309" y="-287.27678571428572"/>
+        </scene>
         <!--Res4 View Controller-->
         <scene sceneID="41u-Yc-atE">
             <objects>
@@ -581,7 +616,7 @@ Phone: (416) 596-2231
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k07-nr-LtO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4704" y="-105"/>
+            <point key="canvasLocation" x="4643" y="-291"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="Edn-YL-3fV">
@@ -759,6 +794,7 @@ Phone: (416) 596-2231
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="Nqu-tq-Ctl"/>
         <segue reference="Pdx-Xz-r9n"/>
     </inferredMetricsTieBreakers>
     <resources>
