@@ -19,7 +19,7 @@ class map2ViewController: UIViewController {
       
         mapView1.addAnnotation(annontation)
         
-        let region = MKCoordinateRegion(center: annontation.coordinate, latitudinalMeters: 100, longitudinalMeters: 100)
+        let region = MKCoordinateRegion(center: annontation.coordinate, latitudinalMeters: 10000, longitudinalMeters: 10000)
         mapView1.setRegion(region, animated: true)
         
     }

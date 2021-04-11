@@ -31,7 +31,7 @@
                                 <rect key="frame" x="20" y="414" width="152" height="101"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="res4" translatesAutoresizingMaskIntoConstraints="NO" id="Onz-eb-rA9">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="res2" translatesAutoresizingMaskIntoConstraints="NO" id="Onz-eb-rA9">
                                 <rect key="frame" x="20" y="546" width="152" height="101"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -157,6 +157,13 @@
                                     <segue destination="oXK-t6-Dl4" kind="show" id="AN5-mW-VDv"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="225 RESTAURANT GUIDE APP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2P-cF-4RV">
+                                <rect key="frame" x="90" y="88" width="244" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -173,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-125" y="163"/>
+            <point key="canvasLocation" x="-126.08695652173914" y="162.72321428571428"/>
         </scene>
         <!--Res1 View Controller-->
         <scene sceneID="iEa-YY-KtN">
@@ -768,8 +775,8 @@ Phone: (416) 596-2231
                                 <rect key="frame" x="87" y="217" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start Restaurant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1n-fW-rSx">
-                                <rect key="frame" x="108" y="162" width="177" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Airport Restaurant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1n-fW-rSx">
+                                <rect key="frame" x="97" y="162" width="199" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <nil key="textColor"/>
@@ -810,6 +817,9 @@ Phone: (416) 596-2231
                                 <state key="normal" title="Track Restaurant">
                                     <color key="titleColor" red="0.61371242999999998" green="0.10974902659999999" blue="0.1214445606" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="OcW-6Y-lvx" kind="show" id="irN-dG-Hkh"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pdo-WX-j6W">
                                 <rect key="frame" x="211" y="693" width="175" height="149"/>
@@ -828,16 +838,52 @@ Phone: (416) 596-2231
                                 <state key="normal" title="See On Map">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="OcW-6Y-lvx" kind="show" id="Yim-r8-qOr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="K7E-OH-vS4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="8jI-HQ-Hqr"/>
+                    <connections>
+                        <outlet property="mapView5" destination="VpT-8C-5lD" id="vzC-In-n6n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ary-IT-8Nx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1433" y="381"/>
+        </scene>
+        <!--Map5 View Controller-->
+        <scene sceneID="gjL-bC-AlO">
+            <objects>
+                <viewController id="OcW-6Y-lvx" customClass="map5ViewController" customModule="RestaurantGuide_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CHW-nW-4Oe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="AXE-Lx-mUM">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xIZ-GR-KH0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AXE-Lx-mUM" firstAttribute="top" secondItem="xIZ-GR-KH0" secondAttribute="top" id="2mX-00-7oQ"/>
+                            <constraint firstItem="AXE-Lx-mUM" firstAttribute="leading" secondItem="xIZ-GR-KH0" secondAttribute="leading" id="36l-Nr-SPT"/>
+                            <constraint firstItem="AXE-Lx-mUM" firstAttribute="trailing" secondItem="xIZ-GR-KH0" secondAttribute="trailing" id="Cvb-ZU-JtY"/>
+                            <constraint firstAttribute="bottom" secondItem="AXE-Lx-mUM" secondAttribute="bottom" id="dsm-2i-58r"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NCh-7X-Vpk"/>
+                    <connections>
+                        <outlet property="mapView5" destination="AXE-Lx-mUM" id="5jm-Ir-j9j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9HT-k1-wm8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2195.6521739130435" y="379.6875"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6iT-4i-25M">
@@ -859,6 +905,7 @@ Phone: (416) 596-2231
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="Yim-r8-qOr"/>
         <segue reference="MIM-F6-D2d"/>
         <segue reference="dw9-oT-paB"/>
         <segue reference="Nqu-tq-Ctl"/>

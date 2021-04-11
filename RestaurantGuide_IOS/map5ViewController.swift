@@ -1,29 +1,28 @@
 //
-//  Res2ViewController.swift
+//  map5ViewController.swift
 //  RestaurantGuide_IOS
 //
-//  Created by Fatih on 2021-03-28.
+//  Created by Fatih on 2021-04-11.
 //
 
 import UIKit
 import MapKit
 
-class Res2ViewController: UIViewController {
 
-    @IBOutlet weak var mapView1: MKMapView!
+
+class map5ViewController: UIViewController {
+
+    @IBOutlet weak var mapView5: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Hasty Market"
-        
+
         let annontation = MKPointAnnotation()
-        annontation.coordinate = CLLocationCoordinate2D(latitude: 43.67624135177184, longitude: -79.41120476126974)
+        annontation.coordinate = CLLocationCoordinate2D(latitude: 43.68383201565954, longitude: -79.62518517935519)
       
-        mapView1.addAnnotation(annontation)
+        mapView5.addAnnotation(annontation)
         
         let region = MKCoordinateRegion(center: annontation.coordinate, latitudinalMeters: 10000, longitudinalMeters: 10000)
-        mapView1.setRegion(region, animated: true)
-
-        // Do any additional setup after loading the view.
+        mapView5.setRegion(region, animated: true)
     }
     
 

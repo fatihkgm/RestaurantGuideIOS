@@ -20,7 +20,7 @@ class Res4ViewController: UIViewController {
       
         mapView4.addAnnotation(annontation)
         
-        let region = MKCoordinateRegion(center: annontation.coordinate, latitudinalMeters: 100, longitudinalMeters: 100)
+        let region = MKCoordinateRegion(center: annontation.coordinate, latitudinalMeters: 10000, longitudinalMeters: 10000)
         mapView4.setRegion(region, animated: true)
     }
     

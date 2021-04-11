@@ -6,14 +6,22 @@
 //
 
 import UIKit
+import MapKit
 
 class Res5ViewController: UIViewController {
 
+    @IBOutlet weak var mapView5: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Star Restaurant"
+        title = "Airport Restaurant"
 
-        // Do any additional setup after loading the view.
+        let annontation = MKPointAnnotation()
+        annontation.coordinate = CLLocationCoordinate2D(latitude: 43.68383201565954, longitude: -79.62518517935519)
+      
+        mapView5.addAnnotation(annontation)
+        
+        let region = MKCoordinateRegion(center: annontation.coordinate, latitudinalMeters: 10000, longitudinalMeters: 10000)
+        mapView5.setRegion(region, animated: true)
     }
     
 
