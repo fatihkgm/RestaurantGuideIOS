@@ -25,6 +25,8 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
     }
     
+    
+    
     func checkLocationService() {
         if CLLocationManager.locationServicesEnabled(){
             setupLocationManager()
@@ -39,6 +41,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     func checkLocationAuthorization() {
         switch CLLocationManager.authorizationStatus() {
         case .authorizedWhenInUse:
+            mapView.showsUserLocation = true
             break
         case .denied:
             break
