@@ -13,6 +13,7 @@
 		525E8FC926117B13008A1394 /* Res5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525E8FC826117B13008A1394 /* Res5ViewController.swift */; };
 		527844EC2610F52A008ECB73 /* Res1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527844EB2610F52A008ECB73 /* Res1ViewController.swift */; };
 		527844EF2610FE2B008ECB73 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527844EE2610FE2B008ECB73 /* AboutViewController.swift */; };
+		5287F26726234797004CF1A4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5287F26626234796004CF1A4 /* MapViewController.swift */; };
 		52D9C43225EA02A50030402A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D9C43125EA02A50030402A /* AppDelegate.swift */; };
 		52D9C43425EA02A50030402A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D9C43325EA02A50030402A /* SceneDelegate.swift */; };
 		52D9C43625EA02A50030402A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D9C43525EA02A50030402A /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 		525E8FC826117B13008A1394 /* Res5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Res5ViewController.swift; sourceTree = "<group>"; };
 		527844EB2610F52A008ECB73 /* Res1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Res1ViewController.swift; sourceTree = "<group>"; };
 		527844EE2610FE2B008ECB73 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		5287F26626234796004CF1A4 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		52D9C42E25EA02A50030402A /* RestaurantGuide_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantGuide_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D9C43125EA02A50030402A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52D9C43325EA02A50030402A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				52D9C43325EA02A50030402A /* SceneDelegate.swift */,
 				52D9C43525EA02A50030402A /* ViewController.swift */,
 				52D9C43725EA02A50030402A /* Main.storyboard */,
+				5287F26626234796004CF1A4 /* MapViewController.swift */,
 				525E8FC826117B13008A1394 /* Res5ViewController.swift */,
 				525E8FC526117AD4008A1394 /* Res4ViewController.swift */,
 				525E8FC226117A87008A1394 /* Res3ViewController.swift */,
@@ -158,6 +161,7 @@
 				525E8FC626117AD4008A1394 /* Res4ViewController.swift in Sources */,
 				52D9C43625EA02A50030402A /* ViewController.swift in Sources */,
 				527844EC2610F52A008ECB73 /* Res1ViewController.swift in Sources */,
+				5287F26726234797004CF1A4 /* MapViewController.swift in Sources */,
 				525E8FC026117909008A1394 /* Res2ViewController.swift in Sources */,
 				52D9C43225EA02A50030402A /* AppDelegate.swift in Sources */,
 				527844EF2610FE2B008ECB73 /* AboutViewController.swift in Sources */,

@@ -1,25 +1,23 @@
 //
-//  Res1ViewController.swift
+//  MapViewController.swift
 //  RestaurantGuide_IOS
 //
-//  Created by Fatih on 2021-03-28.
+//  Created by Fatih on 2021-04-11.
 //
 
 import UIKit
 import MapKit
-class Res1ViewController: UIViewController, MKMapViewDelegate {
+import CoreLocation
+
+class MapViewController: UIViewController, MKMapViewDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "McDonals"
-        mapView.isUserInteractionEnabled = true
         mapView.delegate=self
-        
-
         // Do any additional setup after loading the view.
     }
-  
+    
 
     /*
     // MARK: - Navigation

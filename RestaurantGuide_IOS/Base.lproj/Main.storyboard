@@ -218,13 +218,35 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Zvb-vC-5SJ">
-                                <rect key="frame" x="36" y="475" width="342" height="360"/>
+                                <rect key="frame" x="36" y="637" width="175" height="198"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="qYp-xN-73E">
                                 <rect key="frame" x="219" y="846" width="37" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jWX-aE-Ape">
+                                <rect key="frame" x="219" y="689" width="175" height="166.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Address: 356 Yonge St, Toronto, ON M5B 1S5  Hours: Open 24 Order: ubereats.com, doordash.com, mcdonalds.ca, skipthedishes.com
+Phone: (416) 596-2231
+    </string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFv-Ir-PdR">
+                                <rect key="frame" x="230" y="637" width="153" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="Track Restaurant">
+                                    <color key="titleColor" red="0.61371242999999998" green="0.10974902659999999" blue="0.1214445606" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0wy-GN-z2c" kind="show" id="rSx-FT-pGu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XHb-h5-qeC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -243,6 +265,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mJw-z4-NIM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="613.04347826086962" y="7.3660714285714279"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="R5b-NC-szQ">
+            <objects>
+                <viewController id="0wy-GN-z2c" customClass="MapViewController" customModule="RestaurantGuide_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zpL-LZ-4dE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lzO-Rq-oUD">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lxS-ap-PzT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="lzO-Rq-oUD" secondAttribute="bottom" id="0Dv-XJ-pJb"/>
+                            <constraint firstItem="lzO-Rq-oUD" firstAttribute="leading" secondItem="lxS-ap-PzT" secondAttribute="leading" id="Jrh-g4-VAW"/>
+                            <constraint firstItem="lzO-Rq-oUD" firstAttribute="trailing" secondItem="lxS-ap-PzT" secondAttribute="trailing" id="Whs-qa-XGY"/>
+                            <constraint firstItem="lzO-Rq-oUD" firstAttribute="top" secondItem="lxS-ap-PzT" secondAttribute="top" id="xAs-Gp-lFI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jHW-dB-vge"/>
+                    <connections>
+                        <outlet property="mapView" destination="lzO-Rq-oUD" id="MRO-hq-bnK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xYf-gW-hzp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1582.608695652174" y="-334.15178571428572"/>
         </scene>
         <!--Res2 View Controller-->
         <scene sceneID="3Cg-Ym-OHI">
@@ -287,6 +339,29 @@
                                 <rect key="frame" x="245" y="809" width="77" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5aa-6a-c9U">
+                                <rect key="frame" x="36" y="591" width="175" height="198"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ts1-Fq-Wj1">
+                                <rect key="frame" x="230" y="591" width="153" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="Track Restaurant">
+                                    <color key="titleColor" red="0.61371242999999998" green="0.10974902659999999" blue="0.1214445606" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oa0-9d-fN5">
+                                <rect key="frame" x="219" y="643" width="175" height="166.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Address: 356 Yonge St, Toronto, ON M5B 1S5  Hours: Open 24 Order: ubereats.com, doordash.com, mcdonalds.ca, skipthedishes.com
+Phone: (416) 596-2231
+    </string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2NQ-Mh-PIm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -295,7 +370,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AyZ-fj-ARC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1320" y="-105"/>
+            <point key="canvasLocation" x="2588" y="-105"/>
         </scene>
         <!--Res3 View Controller-->
         <scene sceneID="Iy3-Fl-zBu">
@@ -340,6 +415,29 @@
                                 <rect key="frame" x="233" y="807" width="77" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="EPb-HF-QCl">
+                                <rect key="frame" x="27" y="580" width="175" height="198"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5Y-kh-miG">
+                                <rect key="frame" x="221" y="580" width="153" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="Track Restaurant">
+                                    <color key="titleColor" red="0.61371242999999998" green="0.10974902659999999" blue="0.1214445606" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xsw-Ty-Ysh">
+                                <rect key="frame" x="210" y="632" width="175" height="166.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Address: 356 Yonge St, Toronto, ON M5B 1S5  Hours: Open 24 Order: ubereats.com, doordash.com, mcdonalds.ca, skipthedishes.com
+Phone: (416) 596-2231
+    </string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xZZ-fa-D6j"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -348,7 +446,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="men-m4-pnM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2103" y="-109"/>
+            <point key="canvasLocation" x="3667" y="-105"/>
         </scene>
         <!--Res4 View Controller-->
         <scene sceneID="41u-Yc-atE">
@@ -393,6 +491,29 @@
                                 <rect key="frame" x="238" y="807" width="77" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="klp-aj-6Ns">
+                                <rect key="frame" x="36" y="591" width="175" height="198"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVV-Ep-lgT">
+                                <rect key="frame" x="230" y="591" width="153" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="Track Restaurant">
+                                    <color key="titleColor" red="0.61371242999999998" green="0.10974902659999999" blue="0.1214445606" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GOD-G6-NQ1">
+                                <rect key="frame" x="219" y="643" width="175" height="166.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Address: 356 Yonge St, Toronto, ON M5B 1S5  Hours: Open 24 Order: ubereats.com, doordash.com, mcdonalds.ca, skipthedishes.com
+Phone: (416) 596-2231
+    </string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YpL-BL-zq6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -401,7 +522,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k07-nr-LtO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2967" y="-106"/>
+            <point key="canvasLocation" x="4704" y="-105"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="Edn-YL-3fV">
@@ -474,7 +595,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tn9-HG-1Gd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1230.4347826086957" y="551.11607142857144"/>
+            <point key="canvasLocation" x="1248" y="771"/>
         </scene>
         <!--Res5 View Controller-->
         <scene sceneID="VTD-oP-8QF">
@@ -519,6 +640,29 @@
                                 <rect key="frame" x="250" y="807" width="77" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6Ms-dV-Jkh">
+                                <rect key="frame" x="36" y="624" width="175" height="198"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gur-Sz-tvq">
+                                <rect key="frame" x="230" y="624" width="153" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="Track Restaurant">
+                                    <color key="titleColor" red="0.61371242999999998" green="0.10974902659999999" blue="0.1214445606" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HMf-uu-oaw">
+                                <rect key="frame" x="219" y="676" width="175" height="166.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Address: 356 Yonge St, Toronto, ON M5B 1S5  Hours: Open 24 Order: ubereats.com, doordash.com, mcdonalds.ca, skipthedishes.com
+Phone: (416) 596-2231
+    </string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="K7E-OH-vS4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -527,7 +671,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ary-IT-8Nx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2033" y="598"/>
+            <point key="canvasLocation" x="2096" y="793"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6iT-4i-25M">
