@@ -6,13 +6,22 @@
 //
 
 import UIKit
+import MapKit
+
 
 class Map4ViewController: UIViewController {
 
+    @IBOutlet weak var mapView4: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let annontation = MKPointAnnotation()
+        annontation.coordinate = CLLocationCoordinate2D(latitude: 43.63899319433326, longitude: -79.3436294371454)
+      
+        mapView4.addAnnotation(annontation)
+        
+        let region = MKCoordinateRegion(center: annontation.coordinate, latitudinalMeters: 100, longitudinalMeters: 100)
+        mapView4.setRegion(region, animated: true)
     }
     
 

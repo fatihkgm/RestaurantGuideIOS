@@ -314,6 +314,10 @@ Phone: (416) 596-2231
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundMain" translatesAutoresizingMaskIntoConstraints="NO" id="46T-lN-a49">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="res2" translatesAutoresizingMaskIntoConstraints="NO" id="JzJ-bc-9iw">
                                 <rect key="frame" x="99" y="183" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -431,6 +435,10 @@ Phone: (416) 596-2231
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundMain" translatesAutoresizingMaskIntoConstraints="NO" id="dsq-ij-BvU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="res3" translatesAutoresizingMaskIntoConstraints="NO" id="bJE-bX-YsI">
                                 <rect key="frame" x="87" y="194" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -553,6 +561,10 @@ Phone: (416) 596-2231
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundMain" translatesAutoresizingMaskIntoConstraints="NO" id="yhU-8U-4y9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="res3" translatesAutoresizingMaskIntoConstraints="NO" id="jzs-mu-bra">
                                 <rect key="frame" x="103" y="174" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -599,6 +611,9 @@ Phone: (416) 596-2231
                                 <state key="normal" title="Track Restaurant">
                                     <color key="titleColor" red="0.61371242999999998" green="0.10974902659999999" blue="0.1214445606" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Heh-jm-i0N" kind="show" id="oVF-Ir-IBA"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PgW-O7-S9j">
                                 <rect key="frame" x="219" y="689" width="175" height="149"/>
@@ -617,12 +632,18 @@ Phone: (416) 596-2231
                                 <state key="normal" title="See On Map">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Heh-jm-i0N" kind="show" id="MIM-F6-D2d"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YpL-BL-zq6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="q69-Im-x3q"/>
+                    <connections>
+                        <outlet property="mapView4" destination="Y2A-kd-u8z" id="CgF-YY-Rdq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k07-nr-LtO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -637,7 +658,7 @@ Phone: (416) 596-2231
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dSY-n9-qep">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CaB-ax-dYB"/>
@@ -649,6 +670,10 @@ Phone: (416) 596-2231
                             <constraint firstItem="dSY-n9-qep" firstAttribute="trailing" secondItem="CaB-ax-dYB" secondAttribute="trailing" id="yg1-8I-auv"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="1XJ-wo-SvT"/>
+                    <connections>
+                        <outlet property="mapView4" destination="dSY-n9-qep" id="IJC-f3-DW6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qef-0L-bYU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -725,7 +750,7 @@ Phone: (416) 596-2231
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tn9-HG-1Gd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1248" y="771"/>
+            <point key="canvasLocation" x="-126" y="820"/>
         </scene>
         <!--Res5 View Controller-->
         <scene sceneID="VTD-oP-8QF">
@@ -735,6 +760,10 @@ Phone: (416) 596-2231
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundMain" translatesAutoresizingMaskIntoConstraints="NO" id="ZFT-QV-SF7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="res2" translatesAutoresizingMaskIntoConstraints="NO" id="es6-Eh-4Qw">
                                 <rect key="frame" x="87" y="217" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -808,7 +837,7 @@ Phone: (416) 596-2231
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ary-IT-8Nx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2096" y="793"/>
+            <point key="canvasLocation" x="1433" y="381"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6iT-4i-25M">
@@ -830,6 +859,7 @@ Phone: (416) 596-2231
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="MIM-F6-D2d"/>
         <segue reference="dw9-oT-paB"/>
         <segue reference="Nqu-tq-Ctl"/>
         <segue reference="Pdx-Xz-r9n"/>
