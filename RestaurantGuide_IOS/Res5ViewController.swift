@@ -11,6 +11,7 @@ class Res5ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Star Restaurant"
 
         // Do any additional setup after loading the view.
     }
