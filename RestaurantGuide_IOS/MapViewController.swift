@@ -13,12 +13,13 @@ class MapViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     let locationManager = CLLocationManager()
-    var regionInMetters: Double  = 10000
+    let annontation = MKPointAnnotation()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         checkLocationService()
-        // Do any additional setup after loading the view.
+        
+        // D43.668863430827365, -79.39514834852406
     }
     
     func setupLocationManager(){
@@ -28,8 +29,8 @@ class MapViewController: UIViewController {
     
     func centerViewOnUserLocation() {
         if let location = locationManager.location?.coordinate {
-            let region = MKCoordinateRegion.init(center: location, latitudinalMeters: regionInMetters, longitudinalMeters: regionInMetters)
-            mapView.setRegion(region, animated: true)
+            let annontation = MKCoordinateRegion.init(center: location, latitudinalMeters: 43.668863430827365, longitudinalMeters: 79.39514834852406)
+            mapView.setRegion(annontation, animated: true)
         }
     }
     
@@ -68,8 +69,8 @@ class MapViewController: UIViewController {
 extension MapViewController:CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
             guard let location = locations.last else { return }
-            let region = MKCoordinateRegion.init(center: location.coordinate, latitudinalMeters: 10000, longitudinalMeters: 10000)
-            mapView.setRegion(region, animated: true)
+            let annontation = MKCoordinateRegion.init(center: location.coordinate, latitudinalMeters: 43.668863430827365, longitudinalMeters: 79.39514834852406)
+            mapView.setRegion(annontation, animated: true)
         }
         
         
