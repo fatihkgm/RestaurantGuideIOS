@@ -6,14 +6,22 @@
 //
 
 import UIKit
+import MapKit
 
 class Res3ViewController: UIViewController {
 
+    @IBOutlet weak var mapView2: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Mexi Restaurant"
 
-        // Do any additional setup after loading the view.
+        let annontation = MKPointAnnotation()
+        annontation.coordinate = CLLocationCoordinate2D(latitude: 43.642760279364914, longitude: -79.38705680174967)
+      
+        mapView2.addAnnotation(annontation)
+        
+        let region = MKCoordinateRegion(center: annontation.coordinate, latitudinalMeters: 100, longitudinalMeters: 100)
+        mapView2.setRegion(region, animated: true)
     }
     
 

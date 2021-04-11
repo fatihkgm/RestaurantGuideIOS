@@ -1,26 +1,16 @@
 //
-//  map3ViewController.swift
+//  Map4ViewController.swift
 //  RestaurantGuide_IOS
 //
 //  Created by Fatih on 2021-04-11.
 //
 
 import UIKit
-import MapKit
 
-class map3ViewController: UIViewController {
+class Map4ViewController: UIViewController {
 
-    @IBOutlet weak var mapView2: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let annontation = MKPointAnnotation()
-        annontation.coordinate = CLLocationCoordinate2D(latitude: 43.642760279364914, longitude: -79.38705680174967)
-      
-        mapView2.addAnnotation(annontation)
-        
-        let region = MKCoordinateRegion(center: annontation.coordinate, latitudinalMeters: 100, longitudinalMeters: 100)
-        mapView2.setRegion(region, animated: true)
 
         // Do any additional setup after loading the view.
     }
