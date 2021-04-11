@@ -1,7 +1,21 @@
 # RestaurantGuideIOS
 
-📌 PROJECT DESCRIPTION. 
-This project is a mobile application that will be built using swift. With the intended
+<h2 align="center">Restaurant Guide.👋</h2>
+<p align="center"> 📌  SWIFT XCODE </p>
+
+![ban](https://i.ibb.co/W261tZJ/Corporate-Work-Linked-In-Banner.png)
+
+<p align="center">The goal of the project is to design and build a mobile (iOS) application called ”Personal Restaurant Guide” that will help users to keep track of the restaurants they visit, rate them and share using email (Facebook or Twitter). Application is a standalone application. It should run on iOS selected device.
+.</p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/Xcode%20-%23F05033.svg?&style=for-the-badge&logo=xcode&logoColor=white"/>
+<img src="https://img.shields.io/badge/git%20-%23F05033.svg?&style=for-the-badge&logo=git&logoColor=white"/>
+<img src="https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/> 
+  <img src="https://img.shields.io/badge/Swift%20-%23323330.svg?&style=for-the-badge&logo=swift&logoColor=white"/>
+</p>
+
+<p align="center">This project is a mobile application that will be built using swift. With the intended
 devices being IOS mobile. It is aimed at people in all age groups and will come to
 their aid whenever they are trying to choose a restaurant to go to. Our project will
 aim to take away all the guesswork involved with finding which restaurant is good or
@@ -13,22 +27,10 @@ may influence the users decision on whether or not they will eat there.
 The second option would allow the user to view a directory of restaurants in their
 area. In this menu they can view a small picture of the restaurant, the average price,
 general review, aswell as the address and phone number with a very brief
-description of what the restaurant is. Furthermore, there is going to be another
-search bar aswell as a sort option to allow the user to put in various tags such as
-‘italian’ to only display restaurants that serve Italian dishes.
-Finally, the user would be able to click on an actual listing. Through there they
-will see a map of the restaurant and its surroundings using google API. From there,
-they’ll be able to click on the map to get directions to it, see the same information
-they saw on the other screen, as well as a longer description of the restaurant. With
-methods of contacting the restaurant above the description. Below all of that, the
-user will be able to find various reviews from patrons of the restaurant itself.
-Scrolling through it and checking out what everyone liked or disliked about the
-restaurant. And finally, the user would be able to actually review the restaurant itself,
-being able to rate it out of 5 stars and edit them as they wished should they ever
-have a positive or negative experience at the restaurant at a later date.
-All of these features can be viewed in the sample UI’s created below.
+description of what the restaurant is.</p>
 
 
+![gbc1](https://user-images.githubusercontent.com/63836841/114325116-7462cc00-9afc-11eb-9e90-4bc11dc70956.gif)
+ 
 
 
-<img width="1710" alt="Screen Shot 2021-03-28 at 11 29 55 PM" src="https://user-images.githubusercontent.com/63836841/112784162-efb57f80-901e-11eb-8149-af455c38e861.png">
