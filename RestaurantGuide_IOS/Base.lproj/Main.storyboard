@@ -328,6 +328,17 @@ Phone: (416) 596-2231
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="9eG-BP-gCn">
+                                <rect key="frame" x="341" y="105" width="42" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lr-Uh-9Co">
+                                <rect key="frame" x="327" y="102" width="67" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="35w-rL-S0X" kind="show" id="ICF-5J-neV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XHb-h5-qeC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1065,7 +1076,7 @@ Phone: (416) 596-2231
         <segue reference="dw9-oT-paB"/>
         <segue reference="Nqu-tq-Ctl"/>
         <segue reference="Pdx-Xz-r9n"/>
-        <segue reference="xHC-lP-2wL"/>
+        <segue reference="ICF-5J-neV"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="backgroundMain" width="406" height="603"/>
