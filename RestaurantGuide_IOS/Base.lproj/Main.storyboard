@@ -460,6 +460,17 @@ Phone: (416) 596-2231
                                     <segue destination="iwx-xG-HY0" kind="show" id="Nqu-tq-Ctl"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="rXD-X6-lg3">
+                                <rect key="frame" x="345" y="102" width="42" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kk2-d9-X5W">
+                                <rect key="frame" x="331" y="99" width="67" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="35w-rL-S0X" kind="show" id="2N7-i8-TTY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2NQ-Mh-PIm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -579,6 +590,17 @@ Phone: (416) 596-2231
                                 </state>
                                 <connections>
                                     <segue destination="j2E-Kq-rnl" kind="show" id="dw9-oT-paB"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="ntX-I1-H9s">
+                                <rect key="frame" x="341" y="103" width="42" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hpj-sJ-jHN">
+                                <rect key="frame" x="327" y="100" width="67" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="35w-rL-S0X" kind="show" id="HyA-7v-6dv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -707,6 +729,17 @@ Phone: (416) 596-2231
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="kmr-vB-8pG">
+                                <rect key="frame" x="341" y="108" width="42" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAz-9c-oNf">
+                                <rect key="frame" x="327" y="105" width="67" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="35w-rL-S0X" kind="show" id="xHC-lP-2wL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YpL-BL-zq6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -953,6 +986,17 @@ Phone: (416) 596-2231
                                     <segue destination="OcW-6Y-lvx" kind="show" id="Yim-r8-qOr"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="uDy-P0-XkS">
+                                <rect key="frame" x="341" y="103" width="42" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jG7-Y1-Dt6">
+                                <rect key="frame" x="327" y="100" width="67" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="35w-rL-S0X" kind="show" id="Ya4-Xe-6Eu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="K7E-OH-vS4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1021,6 +1065,7 @@ Phone: (416) 596-2231
         <segue reference="dw9-oT-paB"/>
         <segue reference="Nqu-tq-Ctl"/>
         <segue reference="Pdx-Xz-r9n"/>
+        <segue reference="xHC-lP-2wL"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="backgroundMain" width="406" height="603"/>
