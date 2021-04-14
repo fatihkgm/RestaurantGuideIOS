@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		522881D126277BF300945386 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522881D026277BF300945386 /* SearchTableViewController.swift */; };
 		525E8FC026117909008A1394 /* Res2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525E8FBF26117909008A1394 /* Res2ViewController.swift */; };
 		525E8FC326117A87008A1394 /* Res3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525E8FC226117A87008A1394 /* Res3ViewController.swift */; };
 		525E8FC626117AD4008A1394 /* Res4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525E8FC526117AD4008A1394 /* Res4ViewController.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		522881D026277BF300945386 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		525E8FBF26117909008A1394 /* Res2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Res2ViewController.swift; sourceTree = "<group>"; };
 		525E8FC226117A87008A1394 /* Res3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Res3ViewController.swift; sourceTree = "<group>"; };
 		525E8FC526117AD4008A1394 /* Res4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Res4ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				52D9C43325EA02A50030402A /* SceneDelegate.swift */,
 				52D9C43525EA02A50030402A /* ViewController.swift */,
 				52D9C43725EA02A50030402A /* Main.storyboard */,
+				522881D026277BF300945386 /* SearchTableViewController.swift */,
 				5287F27226238FB8004CF1A4 /* map5ViewController.swift */,
 				5287F26F26238AEE004CF1A4 /* Map4ViewController.swift */,
 				5287F26C26237FAB004CF1A4 /* map3ViewController.swift */,
@@ -196,6 +199,7 @@
 				5287F26726234797004CF1A4 /* MapViewController.swift in Sources */,
 				525E8FC026117909008A1394 /* Res2ViewController.swift in Sources */,
 				5287F27C2623A943004CF1A4 /* T25ViewController.swift in Sources */,
+				522881D126277BF300945386 /* SearchTableViewController.swift in Sources */,
 				52D9C43225EA02A50030402A /* AppDelegate.swift in Sources */,
 				527844EF2610FE2B008ECB73 /* AboutViewController.swift in Sources */,
 				5287F26A2623763C004CF1A4 /* map2ViewController.swift in Sources */,

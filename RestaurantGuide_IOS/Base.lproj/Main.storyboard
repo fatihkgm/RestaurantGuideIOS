@@ -170,6 +170,17 @@
                                     <segue destination="Tpv-Dx-HA7" kind="show" id="rA2-Hj-VOK"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="Z9e-p6-AuI">
+                                <rect key="frame" x="339" y="808" width="42" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKJ-8O-q7W">
+                                <rect key="frame" x="325" y="805" width="67" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="35w-rL-S0X" kind="show" id="p1J-ip-4BG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -186,7 +197,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-126.08695652173914" y="162.72321428571428"/>
+            <point key="canvasLocation" x="-946" y="86"/>
+        </scene>
+        <!--Search Table View Controller-->
+        <scene sceneID="Abt-ky-bHq">
+            <objects>
+                <tableViewController id="35w-rL-S0X" customClass="SearchTableViewController" customModule="RestaurantGuide_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sZ8-AP-WZe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="M1W-pj-NHx">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M1W-pj-NHx" id="Z2h-Pr-FPl">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="35w-rL-S0X" id="C92-zc-lQk"/>
+                            <outlet property="delegate" destination="35w-rL-S0X" id="qnh-Aq-ASy"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="rb9-M1-JID"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6dm-TS-xT3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-114" y="39"/>
         </scene>
         <!--Res1 View Controller-->
         <scene sceneID="iEa-YY-KtN">
@@ -359,7 +399,7 @@ Phone: (416) 596-2231
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lMU-p5-iWh">
                                 <rect key="frame" x="48" y="382" width="342" height="233.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Some of the city’s best-known Italian restaurants have a cultivated ambiance one step below a private club on nonmembers’ night, which makes Ardo notable for its unfussy sophistication. It’s more for the not-for-tourists set than the social-media influencers.We’ve been growing with our communities and serving quality food at great value ever since. Today, McDonald’s Canada is proud to be one of the world’s leading food service retailers. From coast to coast, we serve delicious choices to more than 2.5 million people in over 1,400 locations every day. We’re also more than just your local restaurant.</mutableString>
+                                <string key="text">Some of the city’s best-known Italian restaurants have a cultivated ambiance one step below a private club on nonmembers’ night, which makes Ardo notable for its unfussy sophistication. It’s more for the not-for-tourists set than the social-media influencers.We’ve been growing with our communities and serving quality food at great value ever since. Today, McDonald’s Canada is proud to be one of the world’s leading food service retailers. From coast to coast, we serve delicious choices to more than 2.5 million people in over 1,400 locations every day. We’re also more than just your local restaurant.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -964,7 +1004,7 @@ Phone: (416) 596-2231
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="40N-bI-4b3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-871" y="155"/>
+            <point key="canvasLocation" x="-1762" y="163"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
@@ -977,7 +1017,7 @@ Phone: (416) 596-2231
     <resources>
         <image name="backgroundMain" width="406" height="603"/>
         <image name="facebook" width="500" height="500"/>
-        <image name="gbc" width="349" height="232"/>
+        <image name="gbc" width="174.5" height="116"/>
         <image name="instagram" width="577" height="432"/>
         <image name="like" width="200" height="200"/>
         <image name="res1" width="298" height="147"/>
@@ -985,6 +1025,7 @@ Phone: (416) 596-2231
         <image name="res3" width="338" height="189"/>
         <image name="res4" width="337" height="195"/>
         <image name="res5" width="342" height="193"/>
+        <image name="search" width="512" height="512"/>
         <image name="star" width="753" height="175"/>
         <image name="teamwork" width="256.5" height="243"/>
         <systemColor name="labelColor">
