@@ -19,6 +19,7 @@ class SearchTableViewController: UITableViewController,UISearchBarDelegate {
         searchBar.delegate = self
         filteredData = data
         
+        
     }
 
  

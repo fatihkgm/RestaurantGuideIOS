@@ -14,6 +14,8 @@ class Res1ViewController: UIViewController {
 
     
     @IBOutlet weak var mapView: MKMapView!
+   
+    
     let locationManager = CLLocationManager()
     var regionInMetters: Double  = 10000
     
@@ -27,17 +29,14 @@ class Res1ViewController: UIViewController {
     }
   
     @IBAction func facebookButton(_ sender: Any) {
-        if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeFacebook) {
-
-            let facebookShare = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-            if let facebookShare = facebookShare{
-                    facebookShare.setInitialText("Nice Tutorials of iOSDevCenters")
-                    facebookShare.add(URL(string: "https://iosdevcenters.blogspot.com"))
-                    self.present(facebookShare, animated: true, completion: nil)
-                }
-            } else {
-                  print("Not Available")
-            }
+        
+        let alert = UIAlertController(title: "Share" , message: "Share this restaurant !" , preferredStyle: .actionSheet)
+        let actionOne = UIAlertAction(title: "Share on Facebook", style: .default) { (action) in
+            print("Seccuess")
+        }
+        alert.addAction(actionOne)
+        
+        self.present(alert, animated: true, completion: nil)
     }
   
     
