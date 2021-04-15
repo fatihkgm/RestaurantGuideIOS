@@ -30,16 +30,43 @@ class Res1ViewController: UIViewController {
   
     @IBAction func facebookButton(_ sender: Any) {
         
-        let alert = UIAlertController(title: "Share" , message: "Share this restaurant !" , preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: "Share" , message: " Mcdonals at Toronto  !" , preferredStyle: .actionSheet)
         let actionOne = UIAlertAction(title: "Share on Facebook", style: .default) { (action) in
-            print("Seccuess")
+            if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeFacebook) {
+                let post = SLComposeViewController(forServiceType: SLServiceTypeFacebook)!
+                post.setInitialText(" The Mcdonals in this location is awesome guys.")
+                post.add(UIImage(named: "res1.png"))
+                
+                self.present(post, animated: true, completion: nil)
+                
+                
+            }else {self.showAlert(service: "Facebook")}
         }
+        
+        let actionTwo = UIAlertAction(title: "Share on Twitter", style: .default) { (action) in
+            if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeTwitter) {
+                let post = SLComposeViewController(forServiceType: SLServiceTypeTwitter)!
+                post.setInitialText(" The Mcdonals in this location is awesome guys.")
+                post.add(UIImage(named: "res1.png"))
+                
+                self.present(post, animated: true, completion: nil)
+                
+                
+            }else {self.showAlert(service: "Twitter")}
+        }
+        
         alert.addAction(actionOne)
+        alert.addAction(actionTwo)
         
         self.present(alert, animated: true, completion: nil)
     }
   
-    
+    func showAlert(service:String){
+        let alert = UIAlertController(title: "Error" , message: "You are not connected to \(service)" , preferredStyle: .alert)
+        let action = UIAlertAction(title: "Dismiss", style: .cancel, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
     
     
     func setupLocationManager(){
