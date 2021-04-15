@@ -324,11 +324,22 @@ Phone: (416) 596-2231
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <size key="titleShadowOffset" width="3" height="3"/>
-                                <state key="normal" title="SHARE">
+                                <state key="normal" title="SHARE ON SOCIAL MEDIA">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="facebookButton:" destination="K8Z-2y-zBD" eventType="touchUpInside" id="6wF-3N-mCp"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="Sgw-fx-yfQ">
+                                <rect key="frame" x="318" y="296" width="26" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CyT-iC-yB8">
+                                <rect key="frame" x="316" y="296" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="emailButtonTapped:" destination="K8Z-2y-zBD" eventType="touchUpInside" id="G8P-sX-bPm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -378,7 +389,7 @@ Phone: (416) 596-2231
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xYf-gW-hzp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1394" y="-291"/>
+            <point key="canvasLocation" x="613" y="-639"/>
         </scene>
         <!--Res2 View Controller-->
         <scene sceneID="3Cg-Ym-OHI">
@@ -415,22 +426,10 @@ Phone: (416) 596-2231
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="6kC-1E-mwu">
-                                <rect key="frame" x="122" y="854" width="32" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="instagram" translatesAutoresizingMaskIntoConstraints="NO" id="3RB-Ws-epz">
-                                <rect key="frame" x="175" y="854" width="33" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5qc-Sq-heX">
-                                <rect key="frame" x="40" y="645" width="175" height="198"/>
+                                <rect key="frame" x="40" y="633" width="175" height="198"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="Ylx-ik-M7P">
-                                <rect key="frame" x="223" y="854" width="37" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2b-vP-7xd">
                                 <rect key="frame" x="234" y="645" width="153" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -442,17 +441,6 @@ Phone: (416) 596-2231
                                     <segue destination="iwx-xG-HY0" kind="show" id="jya-aZ-WhY"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M96-RE-WCe">
-                                <rect key="frame" x="223" y="697" width="175" height="149"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Address: 356 Yonge St, Toronto, ON M5B 1S5  Hours: Open 24 Order: ubereats.com, doordash.com, mcdonalds.ca, skipthedishes.com
-Phone: (416) 596-2231
-    </string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geI-rZ-0cv">
                                 <rect key="frame" x="85" y="651" width="84" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -474,6 +462,42 @@ Phone: (416) 596-2231
                                     <segue destination="35w-rL-S0X" kind="show" id="2N7-i8-TTY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pb-5X-bjZ">
+                                <rect key="frame" x="1" y="839" width="414" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <size key="titleShadowOffset" width="3" height="3"/>
+                                <state key="normal" title="SHARE ON SOCIAL MEDIA">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="facebookButton:" destination="K8Z-2y-zBD" eventType="touchUpInside" id="VwV-NC-E1V"/>
+                                    <action selector="socialMedia:" destination="oXK-t6-Dl4" eventType="touchUpInside" id="nJW-1D-uxw"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="zw9-02-iS4">
+                                <rect key="frame" x="347" y="319" width="26" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNf-Lb-qrL">
+                                <rect key="frame" x="345" y="319" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="emailButtonTapped:" destination="K8Z-2y-zBD" eventType="touchUpInside" id="KiY-wM-1RI"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M96-RE-WCe">
+                                <rect key="frame" x="219" y="682" width="175" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Address: 356 Yonge St, Toronto, ON M5B 1S5  Hours: Open 24 Order: ubereats.com, doordash.com, mcdonalds.ca, skipthedishes.com
+Phone: (416) 596-2231
+    </string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2NQ-Mh-PIm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -485,7 +509,7 @@ Phone: (416) 596-2231
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AyZ-fj-ARC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2041" y="-291"/>
+            <point key="canvasLocation" x="1249" y="7"/>
         </scene>
         <!--Map2 View Controller-->
         <scene sceneID="UeB-Hs-Qq2">
@@ -510,7 +534,7 @@ Phone: (416) 596-2231
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZmT-aB-Q57" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2666.666666666667" y="-291.29464285714283"/>
+            <point key="canvasLocation" x="1286" y="-640"/>
         </scene>
         <!--Res3 View Controller-->
         <scene sceneID="Iy3-Fl-zBu">
@@ -547,22 +571,10 @@ Phone: (416) 596-2231
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="HGo-ea-atd">
-                                <rect key="frame" x="118" y="848" width="32" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="instagram" translatesAutoresizingMaskIntoConstraints="NO" id="n4S-pl-AH7">
-                                <rect key="frame" x="171" y="848" width="33" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="05Y-eS-x6I">
                                 <rect key="frame" x="36" y="639" width="175" height="198"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="LLK-t9-Lph">
-                                <rect key="frame" x="219" y="848" width="37" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mwv-HI-dyN">
                                 <rect key="frame" x="230" y="639" width="153" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -606,6 +618,31 @@ Phone: (416) 596-2231
                                     <segue destination="35w-rL-S0X" kind="show" id="HyA-7v-6dv"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dL4-v8-Fe9">
+                                <rect key="frame" x="0.0" y="835" width="414" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <size key="titleShadowOffset" width="3" height="3"/>
+                                <state key="normal" title="SHARE ON SOCIAL MEDIA">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="facebookButton:" destination="K8Z-2y-zBD" eventType="touchUpInside" id="ZB1-OY-ivi"/>
+                                    <action selector="socialMedia:" destination="KLc-Fq-PTO" eventType="touchUpInside" id="5Bb-Xm-S1U"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="vO4-nF-fOQ">
+                                <rect key="frame" x="329" y="330" width="26" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsm-8P-jrW">
+                                <rect key="frame" x="327" y="330" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="emailButtonTapped:" destination="K8Z-2y-zBD" eventType="touchUpInside" id="c1t-yQ-rRM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xZZ-fa-D6j"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -617,7 +654,7 @@ Phone: (416) 596-2231
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="men-m4-pnM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3317" y="-291"/>
+            <point key="canvasLocation" x="1903" y="7"/>
         </scene>
         <!--Map3 View Controller-->
         <scene sceneID="0FY-p3-2lw">
@@ -647,7 +684,7 @@ Phone: (416) 596-2231
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uSH-SG-XXr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3986.9565217391309" y="-287.27678571428572"/>
+            <point key="canvasLocation" x="1938" y="-640"/>
         </scene>
         <!--Res4 View Controller-->
         <scene sceneID="41u-Yc-atE">
@@ -676,22 +713,10 @@ Phone: (416) 596-2231
                                 <rect key="frame" x="120" y="310" width="206" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="xeq-4f-FQA">
-                                <rect key="frame" x="118" y="846" width="32" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="instagram" translatesAutoresizingMaskIntoConstraints="NO" id="kSL-BK-YL5">
-                                <rect key="frame" x="171" y="846" width="33" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Y2A-kd-u8z">
                                 <rect key="frame" x="36" y="637" width="175" height="198"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="kaV-q4-Jc2">
-                                <rect key="frame" x="219" y="846" width="37" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fil-Vi-On7">
                                 <rect key="frame" x="230" y="637" width="153" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -743,6 +768,31 @@ Phone: (416) 596-2231
                                     <segue destination="35w-rL-S0X" kind="show" id="xHC-lP-2wL"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyH-C4-DdM">
+                                <rect key="frame" x="0.0" y="843" width="414" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <size key="titleShadowOffset" width="3" height="3"/>
+                                <state key="normal" title="SHARE ON SOCIAL MEDIA">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="facebookButton:" destination="K8Z-2y-zBD" eventType="touchUpInside" id="iBO-8E-bVJ"/>
+                                    <action selector="socialMedia:" destination="m44-wm-Ydo" eventType="touchUpInside" id="DZN-VU-hdW"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="Xg7-vf-Sgi">
+                                <rect key="frame" x="347" y="310" width="26" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9K-rN-FWb">
+                                <rect key="frame" x="345" y="310" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="emailButtonTapped:" destination="K8Z-2y-zBD" eventType="touchUpInside" id="WNO-dq-AJB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YpL-BL-zq6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -754,7 +804,7 @@ Phone: (416) 596-2231
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k07-nr-LtO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4643" y="-291"/>
+            <point key="canvasLocation" x="2587" y="7"/>
         </scene>
         <!--Map4 View Controller-->
         <scene sceneID="0iM-oa-c1i">
@@ -784,7 +834,7 @@ Phone: (416) 596-2231
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qef-0L-bYU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5301.449275362319" y="-287.27678571428572"/>
+            <point key="canvasLocation" x="2587" y="-640"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="Edn-YL-3fV">
@@ -922,13 +972,6 @@ Phone: (416) 596-2231
                                 <rect key="frame" x="87" y="217" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Airport Restaurant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1n-fW-rSx">
-                                <rect key="frame" x="97" y="162" width="199" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="Dgh-2Z-rPB">
                                 <rect key="frame" x="104" y="353" width="206" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -941,22 +984,10 @@ Phone: (416) 596-2231
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="7vu-vO-0W8">
-                                <rect key="frame" x="110" y="850" width="32" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="instagram" translatesAutoresizingMaskIntoConstraints="NO" id="7Za-SR-xWV">
-                                <rect key="frame" x="163" y="850" width="33" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VpT-8C-5lD">
                                 <rect key="frame" x="28" y="641" width="175" height="198"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="oN3-Jf-qj0">
-                                <rect key="frame" x="211" y="850" width="37" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1TN-11-drl">
                                 <rect key="frame" x="222" y="641" width="153" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1000,6 +1031,38 @@ Phone: (416) 596-2231
                                     <segue destination="35w-rL-S0X" kind="show" id="Ya4-Xe-6Eu"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4z-OO-bU6">
+                                <rect key="frame" x="0.0" y="837" width="414" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <size key="titleShadowOffset" width="3" height="3"/>
+                                <state key="normal" title="SHARE ON SOCIAL MEDIA">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="facebookButton:" destination="K8Z-2y-zBD" eventType="touchUpInside" id="VPW-bG-dxF"/>
+                                    <action selector="socialMedia:" destination="P31-1n-bwl" eventType="touchUpInside" id="7M6-n1-hEg"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="Er5-TN-6pe">
+                                <rect key="frame" x="343" y="353" width="26" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTO-le-s45">
+                                <rect key="frame" x="341" y="353" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="emailButtonTapped:" destination="K8Z-2y-zBD" eventType="touchUpInside" id="CEi-ZB-hAj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Airport Restaurant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1n-fW-rSx">
+                                <rect key="frame" x="120" y="154" width="199" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="K7E-OH-vS4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1011,7 +1074,7 @@ Phone: (416) 596-2231
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ary-IT-8Nx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1433" y="381"/>
+            <point key="canvasLocation" x="3254" y="7"/>
         </scene>
         <!--Map5 View Controller-->
         <scene sceneID="gjL-bC-AlO">
@@ -1041,7 +1104,7 @@ Phone: (416) 596-2231
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9HT-k1-wm8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2195.6521739130435" y="379.6875"/>
+            <point key="canvasLocation" x="3254" y="-640"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6iT-4i-25M">
@@ -1068,14 +1131,12 @@ Phone: (416) 596-2231
         <segue reference="dw9-oT-paB"/>
         <segue reference="Nqu-tq-Ctl"/>
         <segue reference="Pdx-Xz-r9n"/>
-        <segue reference="ICF-5J-neV"/>
+        <segue reference="xHC-lP-2wL"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="backgroundMain" width="406" height="603"/>
-        <image name="facebook" width="500" height="500"/>
+        <image name="email" width="512" height="512"/>
         <image name="gbc" width="174.5" height="116"/>
-        <image name="instagram" width="577" height="432"/>
-        <image name="like" width="200" height="200"/>
         <image name="res1" width="298" height="147"/>
         <image name="res2" width="299" height="144"/>
         <image name="res3" width="338" height="189"/>

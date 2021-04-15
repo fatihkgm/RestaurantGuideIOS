@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		522881D126277BF300945386 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522881D026277BF300945386 /* SearchTableViewController.swift */; };
+		522881D42627F15B00945386 /* SAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522881D32627F15A00945386 /* SAButton.swift */; };
 		525E8FC026117909008A1394 /* Res2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525E8FBF26117909008A1394 /* Res2ViewController.swift */; };
 		525E8FC326117A87008A1394 /* Res3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525E8FC226117A87008A1394 /* Res3ViewController.swift */; };
 		525E8FC626117AD4008A1394 /* Res4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525E8FC526117AD4008A1394 /* Res4ViewController.swift */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		522881D026277BF300945386 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		522881D32627F15A00945386 /* SAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAButton.swift; sourceTree = "<group>"; };
 		525E8FBF26117909008A1394 /* Res2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Res2ViewController.swift; sourceTree = "<group>"; };
 		525E8FC226117A87008A1394 /* Res3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Res3ViewController.swift; sourceTree = "<group>"; };
 		525E8FC526117AD4008A1394 /* Res4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Res4ViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				525E8FBF26117909008A1394 /* Res2ViewController.swift */,
 				527844EE2610FE2B008ECB73 /* AboutViewController.swift */,
 				527844EB2610F52A008ECB73 /* Res1ViewController.swift */,
+				522881D32627F15A00945386 /* SAButton.swift */,
 				52D9C43A25EA02A80030402A /* Assets.xcassets */,
 				52D9C43C25EA02A80030402A /* LaunchScreen.storyboard */,
 				52D9C43F25EA02A80030402A /* Info.plist */,
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				525E8FC626117AD4008A1394 /* Res4ViewController.swift in Sources */,
+				522881D42627F15B00945386 /* SAButton.swift in Sources */,
 				52D9C43625EA02A50030402A /* ViewController.swift in Sources */,
 				527844EC2610F52A008ECB73 /* Res1ViewController.swift in Sources */,
 				5287F26D26237FAB004CF1A4 /* map3ViewController.swift in Sources */,

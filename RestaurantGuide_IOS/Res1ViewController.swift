@@ -9,6 +9,7 @@ import UIKit
 import MapKit
 import CoreLocation
 import Social
+import MessageUI
 
 class Res1ViewController: UIViewController {
 
@@ -24,9 +25,15 @@ class Res1ViewController: UIViewController {
         title = "McDonals"
         checkLocationService()
         
+        
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func emailButtonTapped(_ sender: SAButton) {
+        showMailComposer()
+    }
+    
   
     @IBAction func facebookButton(_ sender: Any) {
         
@@ -59,6 +66,19 @@ class Res1ViewController: UIViewController {
         alert.addAction(actionTwo)
         
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    func showMailComposer() {
+        guard MFMailComposeViewController.canSendMail() else {
+            return
+        }
+        let composer = MFMailComposeViewController()
+                composer.mailComposeDelegate = self
+                composer.setToRecipients(["t25@gmail.com"])
+                composer.setSubject("Check Out!")
+                composer.setMessageBody("This restaurant is awesome!", isHTML: false)
+                
+                present(composer, animated: true)
     }
   
     func showAlert(service:String){
@@ -113,7 +133,7 @@ class Res1ViewController: UIViewController {
        }
    }
 
-extension Res1ViewController:CLLocationManagerDelegate {
+extension Res1ViewController:CLLocationManagerDelegate,MFMailComposeViewControllerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
             guard let location = locations.last else { return }
             let region = MKCoordinateRegion.init(center: location.coordinate, latitudinalMeters: 10000, longitudinalMeters: 10000)
@@ -124,5 +144,28 @@ extension Res1ViewController:CLLocationManagerDelegate {
         func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
             checkLocationAuthorization()
         }
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        
+        if let _ = error {
+            //Show error alert
+            controller.dismiss(animated: true)
+            return
+        }
+        
+        switch result {
+        case .cancelled:
+            print("Cancelled")
+        case .failed:
+            print("Failed to send")
+        case .saved:
+            print("Saved")
+        case .sent:
+            print("Email Sent")
+        @unknown default:
+            break
+        }
+        
+        controller.dismiss(animated: true)
+    }
 }
 
