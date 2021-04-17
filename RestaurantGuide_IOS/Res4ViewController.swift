@@ -11,6 +11,10 @@ import Social
 
 class Res4ViewController: UIViewController {
 
+    @IBOutlet var starButtons: [UIButton]!
+    
+    @IBOutlet weak var rateView: UILabel!
+    
     @IBOutlet weak var mapView4: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +29,18 @@ class Res4ViewController: UIViewController {
         mapView4.setRegion(region, animated: true)
     }
     
-
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        print("Rated \(sender.tag) stars.")
+                rateView.text = " 'Your Home' rated \(sender.tag) stars."
+                for  button in starButtons {
+                    if button.tag <= sender.tag {
+                        button.setBackgroundImage(UIImage.init(named: "start-selected"), for: .normal)   //selectted
+                    } else {
+                        button.setBackgroundImage(UIImage.init(named: "star-not-selected"), for: .normal)    //not selectted
+                    }
+                }
+    }
+    
     @IBAction func socialMedia(_ sender: UIButton) {
         let alert = UIAlertController(title: "Share" , message: " Your Home at Toronto  !" , preferredStyle: .actionSheet)
         let actionOne = UIAlertAction(title: "Share on Facebook", style: .default) { (action) in

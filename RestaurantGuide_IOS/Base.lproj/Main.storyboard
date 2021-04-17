@@ -324,10 +324,10 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jWX-aE-Ape">
-                                <rect key="frame" x="219" y="689" width="175" height="149"/>
+                                <rect key="frame" x="219" y="670" width="175" height="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Address: 356 Yonge St, Toronto, ON M5B 1S5  Hours: Open 24 Order: ubereats.com, doordash.com, mcdonalds.ca, skipthedishes.com
+                                <string key="text">Address: 356 Yonge St, Toronto, ON M5B 1S5  Hours: Open 24 Order: ubereats.com, 
 Phone: (416) 596-2231
     </string>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -344,14 +344,6 @@ Phone: (416) 596-2231
                                     <segue destination="0wy-GN-z2c" kind="show" id="Pdx-Xz-r9n"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cOq-M7-0bQ">
-                                <rect key="frame" x="36" y="357" width="342" height="166.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">McDonald's Corporation is an American fast food company, founded in 1940 as a restaurant operated by Richard and Maurice McDonald, in San Bernardino, California, United StatesCanada is proud to be one of the world’s leading food service retailers. From coast to coast, we serve delicious choices to more than 2.5 million people in over 1,400 locations every day. We’re also more than just your local restaurant.</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="9eG-BP-gCn">
                                 <rect key="frame" x="341" y="105" width="42" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -370,49 +362,83 @@ Phone: (416) 596-2231
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CyT-iC-yB8">
-                                <rect key="frame" x="90" y="586" width="30" height="30"/>
+                                <rect key="frame" x="347" y="805" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="emailButtonTapped:" destination="K8Z-2y-zBD" eventType="touchUpInside" id="G8P-sX-bPm"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="Sgw-fx-yfQ">
-                                <rect key="frame" x="99" y="586" width="21" height="30"/>
+                                <rect key="frame" x="351" y="800" width="27" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6P-tI-66Y">
-                                <rect key="frame" x="286" y="589" width="22" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="share"/>
-                                <connections>
-                                    <action selector="ClickedStar:" destination="K8Z-2y-zBD" eventType="touchUpInside" id="DYp-k7-Ycc"/>
-                                    <action selector="StarClicked:" destination="K8Z-2y-zBD" eventType="touchUpInside" id="wfG-vZ-IkR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pa-nr-Pxf">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pa-nr-Pxf">
                                 <rect key="frame" x="131" y="290" width="27" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="star-not-selected"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="K8Z-2y-zBD" eventType="touchUpInside" id="yAo-gv-IDM"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBQ-dP-RmG">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBQ-dP-RmG">
                                 <rect key="frame" x="270" y="290" width="27" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="star-not-selected"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="K8Z-2y-zBD" eventType="touchUpInside" id="LhI-12-Zpf"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2y-Qk-DZP">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2y-Qk-DZP">
                                 <rect key="frame" x="166" y="290" width="27" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="star-not-selected"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="K8Z-2y-zBD" eventType="touchUpInside" id="uRt-dE-1pL"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epM-7M-rR7">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epM-7M-rR7">
                                 <rect key="frame" x="201" y="290" width="27" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="star-not-selected"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="K8Z-2y-zBD" eventType="touchUpInside" id="Vtd-BL-IE9"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57f-J6-Rrx">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57f-J6-Rrx">
                                 <rect key="frame" x="235" y="290" width="27" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="star-not-selected"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="K8Z-2y-zBD" eventType="touchUpInside" id="xcX-U3-9jl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNe-OI-0Ks">
+                                <rect key="frame" x="221" y="796" width="43" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="7IY-LS-ion">
+                                <rect key="frame" x="234" y="796" width="42" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cOq-M7-0bQ">
+                                <rect key="frame" x="36" y="403" width="342" height="166.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">McDonald's Corporation is an American fast food company, founded in 1940 as a restaurant operated by Richard and Maurice McDonald, in San Bernardino, California, United StatesCanada is proud to be one of the world’s leading food service retailers. From coast to coast, we serve delicious choices to more than 2.5 million people in over 1,400 locations every day. We’re also more than just your local restaurant.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqV-K6-5PI">
+                                <rect key="frame" x="48" y="331" width="333" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6b2-mI-a5i">
+                                <rect key="frame" x="20" y="105" width="51" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="add"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XHb-h5-qeC"/>
@@ -427,6 +453,17 @@ Phone: (416) 596-2231
                     <navigationItem key="navigationItem" id="jIw-k1-QHo"/>
                     <connections>
                         <outlet property="mapView" destination="Zvb-vC-5SJ" id="qKj-FH-t8Y"/>
+                        <outlet property="rateView" destination="oqV-K6-5PI" id="eSQ-Bf-8nw"/>
+                        <outletCollection property="starButtons" destination="5pa-nr-Pxf" collectionClass="NSMutableArray" id="fkl-qb-m7j"/>
+                        <outletCollection property="starButtons" destination="v2y-Qk-DZP" collectionClass="NSMutableArray" id="mbf-tC-lu5"/>
+                        <outletCollection property="starButtons" destination="epM-7M-rR7" collectionClass="NSMutableArray" id="H4e-0B-Let"/>
+                        <outletCollection property="starButtons" destination="57f-J6-Rrx" collectionClass="NSMutableArray" id="flA-gt-NvH"/>
+                        <outletCollection property="starButtons" destination="IBQ-dP-RmG" collectionClass="NSMutableArray" id="Zem-vz-rfI"/>
+                        <outletCollection property="starButtons" destination="IBQ-dP-RmG" collectionClass="NSMutableArray" id="qkj-ml-hLY"/>
+                        <outletCollection property="starButtons" destination="epM-7M-rR7" collectionClass="NSMutableArray" id="h8i-TK-PdS"/>
+                        <outletCollection property="starButtons" destination="57f-J6-Rrx" collectionClass="NSMutableArray" id="hEs-kr-Ghq"/>
+                        <outletCollection property="starButtons" destination="IBQ-dP-RmG" collectionClass="NSMutableArray" id="CR8-QP-yrF"/>
+                        <outletCollection property="starButtons" destination="5pa-nr-Pxf" collectionClass="NSMutableArray" id="VDI-WN-cc1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mJw-z4-NIM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -499,7 +536,7 @@ Phone: (416) 596-2231
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2b-vP-7xd">
-                                <rect key="frame" x="234" y="645" width="153" height="36"/>
+                                <rect key="frame" x="234" y="623" width="153" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <state key="normal" title="Track Restaurant">
@@ -510,10 +547,10 @@ Phone: (416) 596-2231
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M96-RE-WCe">
-                                <rect key="frame" x="219" y="682" width="175" height="149"/>
+                                <rect key="frame" x="219" y="658" width="175" height="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Address: 356 Yonge St, Toronto, ON M5B 1S5  Hours: Open 24 Order: ubereats.com, doordash.com, mcdonalds.ca, skipthedishes.com
+                                <string key="text">Address: 356 Yonge St, Toronto, ON M5B 1S5  Hours: Open 24 Order: ubereats.com, 
 Phone: (416) 596-2231
     </string>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -563,51 +600,71 @@ Phone: (416) 596-2231
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="zw9-02-iS4">
-                                <rect key="frame" x="311" y="310" width="26" height="30"/>
+                                <rect key="frame" x="331" y="801" width="26" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAI-Fq-nfh">
-                                <rect key="frame" x="34" y="293" width="94" height="56"/>
+                                <rect key="frame" x="234" y="792" width="43" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="Twz-UT-5B9" kind="show" id="AWc-tX-1IT"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="8hQ-fe-VyB">
-                                <rect key="frame" x="98" y="305" width="42" height="38"/>
+                                <rect key="frame" x="247" y="792" width="42" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your rate : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTz-zw-qZd">
-                                <rect key="frame" x="178" y="99" width="82" height="21"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qf9-Mh-xXL">
+                                <rect key="frame" x="125" y="311" width="27" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="star-not-selected"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="oXK-t6-Dl4" eventType="touchUpInside" id="Ukr-4P-iBI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xb-IV-aWb">
+                                <rect key="frame" x="264" y="311" width="27" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="star-not-selected"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="oXK-t6-Dl4" eventType="touchUpInside" id="YxQ-oy-Yj5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPG-KD-yzA">
+                                <rect key="frame" x="160" y="311" width="27" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="star-not-selected"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="oXK-t6-Dl4" eventType="touchUpInside" id="3zm-Tt-vg0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVE-Ne-M4k">
+                                <rect key="frame" x="195" y="311" width="27" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="star-not-selected"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="oXK-t6-Dl4" eventType="touchUpInside" id="CD1-8h-jor"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyK-bF-Mr4">
+                                <rect key="frame" x="229" y="311" width="27" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="star-not-selected"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="oXK-t6-Dl4" eventType="touchUpInside" id="Lqy-Tj-xB9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjz-ql-Jgd">
+                                <rect key="frame" x="40" y="342" width="333" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="linkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qf9-Mh-xXL">
-                                <rect key="frame" x="148" y="313" width="27" height="23"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEI-NE-5d9">
+                                <rect key="frame" x="20" y="104" width="51" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="star-not-selected"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xb-IV-aWb">
-                                <rect key="frame" x="287" y="313" width="27" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="star-not-selected"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPG-KD-yzA">
-                                <rect key="frame" x="183" y="313" width="27" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="star-not-selected"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVE-Ne-M4k">
-                                <rect key="frame" x="218" y="313" width="27" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="star-not-selected"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyK-bF-Mr4">
-                                <rect key="frame" x="252" y="313" width="27" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="star-not-selected"/>
+                                <state key="normal" title="Button" image="add"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2NQ-Mh-PIm"/>
@@ -616,7 +673,16 @@ Phone: (416) 596-2231
                     <navigationItem key="navigationItem" id="dHX-Hv-MDV"/>
                     <connections>
                         <outlet property="mapView1" destination="5qc-Sq-heX" id="Q7d-mD-gkv"/>
-                        <outlet property="rateView" destination="WTz-zw-qZd" id="wk1-u3-IkT"/>
+                        <outlet property="rateView" destination="pjz-ql-Jgd" id="EhV-cv-THT"/>
+                        <outletCollection property="starButtons" destination="qf9-Mh-xXL" collectionClass="NSMutableArray" id="ntm-0e-dSW"/>
+                        <outletCollection property="starButtons" destination="IPG-KD-yzA" collectionClass="NSMutableArray" id="Xzg-6u-cf9"/>
+                        <outletCollection property="starButtons" destination="eVE-Ne-M4k" collectionClass="NSMutableArray" id="i4S-7I-7NF"/>
+                        <outletCollection property="starButtons" destination="nyK-bF-Mr4" collectionClass="NSMutableArray" id="I8A-kT-Alb"/>
+                        <outletCollection property="starButtons" destination="2xb-IV-aWb" collectionClass="NSMutableArray" id="YpA-Hu-QPH"/>
+                        <outletCollection property="starButtons" destination="IPG-KD-yzA" collectionClass="NSMutableArray" id="aCG-e7-pu6"/>
+                        <outletCollection property="starButtons" destination="eVE-Ne-M4k" collectionClass="NSMutableArray" id="fz7-Vz-Zhr"/>
+                        <outletCollection property="starButtons" destination="nyK-bF-Mr4" collectionClass="NSMutableArray" id="Eyh-KX-SAS"/>
+                        <outletCollection property="starButtons" destination="2xb-IV-aWb" collectionClass="NSMutableArray" id="sOL-Y1-pCV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AyZ-fj-ARC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -695,10 +761,10 @@ Phone: (416) 596-2231
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="obp-f6-Qnt">
-                                <rect key="frame" x="219" y="691" width="175" height="166.5"/>
+                                <rect key="frame" x="228" y="672" width="161" height="133"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Address: CNN Tower, Toronto, ON M5B 1S5  Hours: Open 24 Order: ubereats.com, doordash.com, mcdonalds.ca, skipthedishes.com
+                                <string key="text">Address: CNN Tower, Toronto, ON M5B 1S5  Hours: Open 24 Order: ubereats.com, skipthedishes.com
 Phone: (416) 596-2231
     </string>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -740,52 +806,79 @@ Phone: (416) 596-2231
                                     <action selector="socialMedia:" destination="KLc-Fq-PTO" eventType="touchUpInside" id="5Bb-Xm-S1U"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsm-8P-jrW">
-                                <rect key="frame" x="280" y="330" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="emailButtonTapped:" destination="K8Z-2y-zBD" eventType="touchUpInside" id="c1t-yQ-rRM"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="vO4-nF-fOQ">
-                                <rect key="frame" x="284" y="330" width="26" height="30"/>
+                                <rect key="frame" x="349" y="794" width="26" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="FVm-Ip-CzS">
-                                <rect key="frame" x="51" y="323" width="45" height="45"/>
+                                <rect key="frame" x="241" y="787" width="42" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewT-FI-uiU">
-                                <rect key="frame" x="10" y="317" width="94" height="56"/>
+                                <rect key="frame" x="216" y="794" width="74" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="Twz-UT-5B9" kind="show" id="KCm-be-pm3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="111-un-nGS">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="111-un-nGS">
                                 <rect key="frame" x="124" y="330" width="27" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="star-not-selected"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="KLc-Fq-PTO" eventType="touchUpInside" id="dBJ-ZU-qdg"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a61-x9-BUh">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a61-x9-BUh">
                                 <rect key="frame" x="263" y="330" width="27" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="star-not-selected"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="KLc-Fq-PTO" eventType="touchUpInside" id="RTP-cC-Olt"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAu-i8-287">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAu-i8-287">
                                 <rect key="frame" x="159" y="330" width="27" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="star-not-selected"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="KLc-Fq-PTO" eventType="touchUpInside" id="bXg-CY-gEc"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCa-7N-tq7">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCa-7N-tq7">
                                 <rect key="frame" x="194" y="330" width="27" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="star-not-selected"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="KLc-Fq-PTO" eventType="touchUpInside" id="Pxc-Rr-Lw0"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gs-xU-xe5">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gs-xU-xe5">
                                 <rect key="frame" x="228" y="330" width="27" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="star-not-selected"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="KLc-Fq-PTO" eventType="touchUpInside" id="pS7-9Z-fc7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsm-8P-jrW">
+                                <rect key="frame" x="348" y="792" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="emailButtonTapped:" destination="K8Z-2y-zBD" eventType="touchUpInside" id="c1t-yQ-rRM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoJ-Ik-Oo0">
+                                <rect key="frame" x="50" y="354" width="333" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWm-3S-4AQ">
+                                <rect key="frame" x="20" y="105" width="51" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="add"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xZZ-fa-D6j"/>
@@ -794,6 +887,12 @@ Phone: (416) 596-2231
                     <navigationItem key="navigationItem" id="Can-2M-aXx"/>
                     <connections>
                         <outlet property="mapView2" destination="05Y-eS-x6I" id="PJP-m6-KfW"/>
+                        <outlet property="rateView" destination="hoJ-Ik-Oo0" id="0Uf-TC-rcX"/>
+                        <outletCollection property="starButtons" destination="111-un-nGS" collectionClass="NSMutableArray" id="bYL-VL-IxL"/>
+                        <outletCollection property="starButtons" destination="oAu-i8-287" collectionClass="NSMutableArray" id="bQQ-MW-dNU"/>
+                        <outletCollection property="starButtons" destination="KCa-7N-tq7" collectionClass="NSMutableArray" id="oyc-Z8-EN1"/>
+                        <outletCollection property="starButtons" destination="3gs-xU-xe5" collectionClass="NSMutableArray" id="B1Z-HD-u9I"/>
+                        <outletCollection property="starButtons" destination="a61-x9-BUh" collectionClass="NSMutableArray" id="q1N-Df-txT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="men-m4-pnM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -869,10 +968,10 @@ Phone: (416) 596-2231
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PgW-O7-S9j">
-                                <rect key="frame" x="219" y="689" width="175" height="166.5"/>
+                                <rect key="frame" x="221" y="670" width="170" height="116.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Address: Toronto island, Toronto, ON M5B 1S5  Hours: Open 24 Order: ubereats.com, doordash.com, mcdonalds.ca, skipthedishes.com
+                                <string key="text">Address: Toronto island, Toronto, ON M5B 1S5  Hours: Open 24 Order: ubereats.com, 
 Phone: (416) 596-2231
     </string>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -923,51 +1022,78 @@ Phone: (416) 596-2231
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9K-rN-FWb">
-                                <rect key="frame" x="309" y="310" width="30" height="30"/>
+                                <rect key="frame" x="345" y="794" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="emailButtonTapped:" destination="K8Z-2y-zBD" eventType="touchUpInside" id="WNO-dq-AJB"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="Xg7-vf-Sgi">
-                                <rect key="frame" x="311" y="310" width="26" height="30"/>
+                                <rect key="frame" x="349" y="794" width="26" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="v14-dN-OKq">
-                                <rect key="frame" x="69" y="303" width="43" height="45"/>
+                                <rect key="frame" x="230" y="786" width="49" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N47-O1-Uw8">
-                                <rect key="frame" x="26" y="297" width="94" height="56"/>
+                                <rect key="frame" x="210" y="786" width="94" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="Twz-UT-5B9" kind="show" id="yV0-E0-DdZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfS-Te-4rn">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfS-Te-4rn">
                                 <rect key="frame" x="140" y="310" width="27" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="star-not-selected"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="m44-wm-Ydo" eventType="touchUpInside" id="yR0-bH-ZRl"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9r-u3-Avv">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9r-u3-Avv">
                                 <rect key="frame" x="279" y="310" width="27" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="star-not-selected"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="m44-wm-Ydo" eventType="touchUpInside" id="2fA-5N-Gkk"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gst-mM-LPQ">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gst-mM-LPQ">
                                 <rect key="frame" x="175" y="310" width="27" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="star-not-selected"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="m44-wm-Ydo" eventType="touchUpInside" id="3qy-8P-WcZ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYb-K1-hlT">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYb-K1-hlT">
                                 <rect key="frame" x="210" y="310" width="27" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="star-not-selected"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="m44-wm-Ydo" eventType="touchUpInside" id="Pmq-jp-pF3"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXU-kK-IMW">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXU-kK-IMW">
                                 <rect key="frame" x="244" y="310" width="27" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="star-not-selected"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="m44-wm-Ydo" eventType="touchUpInside" id="ac7-qD-I5D"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fha-60-y96">
+                                <rect key="frame" x="50" y="334" width="333" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIr-Au-mMf">
+                                <rect key="frame" x="20" y="105" width="51" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="add"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YpL-BL-zq6"/>
@@ -976,6 +1102,12 @@ Phone: (416) 596-2231
                     <navigationItem key="navigationItem" id="q69-Im-x3q"/>
                     <connections>
                         <outlet property="mapView4" destination="Y2A-kd-u8z" id="CgF-YY-Rdq"/>
+                        <outlet property="rateView" destination="Fha-60-y96" id="dP6-M1-4z7"/>
+                        <outletCollection property="starButtons" destination="QfS-Te-4rn" collectionClass="NSMutableArray" id="dyf-O7-i5r"/>
+                        <outletCollection property="starButtons" destination="gst-mM-LPQ" collectionClass="NSMutableArray" id="GCR-bk-9TD"/>
+                        <outletCollection property="starButtons" destination="lYb-K1-hlT" collectionClass="NSMutableArray" id="NOM-68-EI2"/>
+                        <outletCollection property="starButtons" destination="eXU-kK-IMW" collectionClass="NSMutableArray" id="Pyk-oC-XKe"/>
+                        <outletCollection property="starButtons" destination="u9r-u3-Avv" collectionClass="NSMutableArray" id="Eou-Jd-Zz8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k07-nr-LtO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1187,6 +1319,21 @@ Phone: (416) 596-2231
             </objects>
             <point key="canvasLocation" x="660.86956521739137" y="718.52678571428567"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="JWK-Ts-0nf">
+            <objects>
+                <viewController id="xFO-xw-MVS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wOF-hj-3Lm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xaT-TW-Xqd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bwp-zx-5WF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1561" y="706"/>
+        </scene>
         <!--Res5 View Controller-->
         <scene sceneID="VTD-oP-8QF">
             <objects>
@@ -1219,7 +1366,7 @@ Phone: (416) 596-2231
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VpT-8C-5lD">
-                                <rect key="frame" x="28" y="641" width="175" height="198"/>
+                                <rect key="frame" x="28" y="641" width="175" height="188"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1TN-11-drl">
@@ -1234,10 +1381,10 @@ Phone: (416) 596-2231
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pdo-WX-j6W">
-                                <rect key="frame" x="211" y="693" width="175" height="166.5"/>
+                                <rect key="frame" x="213" y="669" width="170" height="116.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Address: Toronto Island, Toronto, ON M5B 1S5  Hours: Open 24 Order: ubereats.com, doordash.com, mcdonalds.ca, skipthedishes.com
+                                <string key="text">Address: Toronto Island, Toronto, ON M5B 1S5  Hours: Open 24 Order: ubereats.com, 
 Phone: (416) 596-2231
     </string>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -1280,51 +1427,83 @@ Phone: (416) 596-2231
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTO-le-s45">
-                                <rect key="frame" x="289" y="353" width="30" height="30"/>
+                                <rect key="frame" x="343" y="786" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="emailButtonTapped:" destination="K8Z-2y-zBD" eventType="touchUpInside" id="CEi-ZB-hAj"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="Er5-TN-6pe">
-                                <rect key="frame" x="291" y="353" width="26" height="30"/>
+                                <rect key="frame" x="349" y="781" width="26" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="Yh7-gc-Omw">
-                                <rect key="frame" x="54" y="343" width="42" height="50"/>
+                                <rect key="frame" x="213" y="776" width="51" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDZ-R5-411">
-                                <rect key="frame" x="10" y="343" width="94" height="56"/>
+                                <rect key="frame" x="203" y="776" width="94" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="Twz-UT-5B9" kind="show" id="pzY-2D-knt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vko-hJ-KVB">
-                                <rect key="frame" x="124" y="343" width="27" height="23"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bg-zf-flP">
+                                <rect key="frame" x="124" y="342" width="27" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="star-not-selected"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="P31-1n-bwl" eventType="touchUpInside" id="LRI-eF-n43"/>
+                                    <action selector="buttonTapped:" destination="m44-wm-Ydo" eventType="touchUpInside" id="zhs-2Q-t92"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Crj-8k-XfN">
-                                <rect key="frame" x="263" y="343" width="27" height="23"/>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ay-ht-Y27">
+                                <rect key="frame" x="263" y="342" width="27" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="star-not-selected"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="P31-1n-bwl" eventType="touchUpInside" id="Co5-WW-BE7"/>
+                                    <action selector="buttonTapped:" destination="m44-wm-Ydo" eventType="touchUpInside" id="tJp-Ab-kKd"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBE-lD-kaH">
-                                <rect key="frame" x="159" y="343" width="27" height="23"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jkx-pH-YcW">
+                                <rect key="frame" x="159" y="342" width="27" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="star-not-selected"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="P31-1n-bwl" eventType="touchUpInside" id="Y0X-bZ-XDs"/>
+                                    <action selector="buttonTapped:" destination="m44-wm-Ydo" eventType="touchUpInside" id="v2C-wC-43D"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bG-QS-MWO">
-                                <rect key="frame" x="194" y="343" width="27" height="23"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4HL-jx-YBi">
+                                <rect key="frame" x="194" y="342" width="27" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="star-not-selected"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="P31-1n-bwl" eventType="touchUpInside" id="1Xi-uG-wej"/>
+                                    <action selector="buttonTapped:" destination="m44-wm-Ydo" eventType="touchUpInside" id="dUM-2l-dyo"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdy-le-gYv">
-                                <rect key="frame" x="228" y="343" width="27" height="23"/>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AL-oo-NlG">
+                                <rect key="frame" x="228" y="342" width="27" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="star-not-selected"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="m44-wm-Ydo" eventType="touchUpInside" id="hzv-gF-wJS"/>
+                                    <action selector="buttonTapped:" destination="P31-1n-bwl" eventType="touchUpInside" id="yOu-dZ-K44"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZS-un-jKe">
+                                <rect key="frame" x="53" y="373" width="333" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Po3-qo-byw">
+                                <rect key="frame" x="20" y="105" width="51" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="add"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="K7E-OH-vS4"/>
@@ -1333,6 +1512,12 @@ Phone: (416) 596-2231
                     <navigationItem key="navigationItem" id="8jI-HQ-Hqr"/>
                     <connections>
                         <outlet property="mapView5" destination="VpT-8C-5lD" id="vzC-In-n6n"/>
+                        <outlet property="rateView" destination="NZS-un-jKe" id="Wj7-Dv-Glg"/>
+                        <outletCollection property="starButtons" destination="4bg-zf-flP" collectionClass="NSMutableArray" id="i87-xo-H9K"/>
+                        <outletCollection property="starButtons" destination="Jkx-pH-YcW" collectionClass="NSMutableArray" id="afe-aG-b8W"/>
+                        <outletCollection property="starButtons" destination="4HL-jx-YBi" collectionClass="NSMutableArray" id="PAD-9U-P6I"/>
+                        <outletCollection property="starButtons" destination="0AL-oo-NlG" collectionClass="NSMutableArray" id="Inn-Ca-5H1"/>
+                        <outletCollection property="starButtons" destination="1ay-ht-Y27" collectionClass="NSMutableArray" id="vp1-Rb-wsR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ary-IT-8Nx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1394,10 +1579,11 @@ Phone: (416) 596-2231
         <segue reference="dw9-oT-paB"/>
         <segue reference="Nqu-tq-Ctl"/>
         <segue reference="Pdx-Xz-r9n"/>
-        <segue reference="xHC-lP-2wL"/>
-        <segue reference="yV0-E0-DdZ"/>
+        <segue reference="2N7-i8-TTY"/>
+        <segue reference="AWc-tX-1IT"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="add" width="390" height="380"/>
         <image name="background" width="426.5" height="213"/>
         <image name="backgroundMain" width="406" height="603"/>
         <image name="email" width="512" height="512"/>
@@ -1410,7 +1596,6 @@ Phone: (416) 596-2231
         <image name="res4" width="337" height="195"/>
         <image name="res5" width="342" height="193"/>
         <image name="search" width="512" height="512"/>
-        <image name="share" width="246" height="254"/>
         <image name="star" width="753" height="175"/>
         <image name="star-not-selected" width="501" height="440"/>
         <image name="teamwork" width="256.5" height="243"/>
@@ -1419,6 +1604,9 @@ Phone: (416) 596-2231
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

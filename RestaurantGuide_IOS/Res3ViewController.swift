@@ -14,6 +14,10 @@ class Res3ViewController: UIViewController {
 
     @IBOutlet weak var mapView2: MKMapView!
     
+    @IBOutlet var starButtons: [UIButton]!
+    
+    @IBOutlet weak var rateView: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Mexi Restaurant"
@@ -27,7 +31,18 @@ class Res3ViewController: UIViewController {
         mapView2.setRegion(region, animated: true)
     }
     
-
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        print("Rated \(sender.tag) stars.")
+                rateView.text = " 'Mexi RestaurantRated' rated \(sender.tag) stars."
+                for  button in starButtons {
+                    if button.tag <= sender.tag {
+                        button.setBackgroundImage(UIImage.init(named: "start-selected"), for: .normal)   //selectted
+                    } else {
+                        button.setBackgroundImage(UIImage.init(named: "star-not-selected"), for: .normal)    //not selectted
+                    }
+                }
+    }
+    
     @IBAction func socialMedia(_ sender: UIButton) {
         
         let alert = UIAlertController(title: "Share" , message: " Mexi Restaurant at Toronto  !" , preferredStyle: .actionSheet)

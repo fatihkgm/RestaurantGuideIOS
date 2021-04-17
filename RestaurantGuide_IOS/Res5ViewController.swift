@@ -12,6 +12,10 @@ import Social
 class Res5ViewController: UIViewController {
 
     @IBOutlet weak var mapView5: MKMapView!
+    
+    @IBOutlet var starButtons: [UIButton]!
+    
+    @IBOutlet weak var rateView: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Airport Restaurant"
@@ -25,7 +29,20 @@ class Res5ViewController: UIViewController {
         mapView5.setRegion(region, animated: true)
     }
     
-
+    
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        
+        print("Rated \(sender.tag) stars.")
+                rateView.text = " 'Airport Restaurant' rated \(sender.tag) stars."
+                for  button in starButtons {
+                    if button.tag <= sender.tag {
+                        button.setBackgroundImage(UIImage.init(named: "start-selected"), for: .normal)   //selectted
+                    } else {
+                        button.setBackgroundImage(UIImage.init(named: "star-not-selected"), for: .normal)    //not selectted
+                    }
+                }
+    }
+    
     @IBAction func socialMedia(_ sender: UIButton) {
         let alert = UIAlertController(title: "Share" , message: " Airport Restaurant at Toronto  !" , preferredStyle: .actionSheet)
         let actionOne = UIAlertAction(title: "Share on Facebook", style: .default) { (action) in

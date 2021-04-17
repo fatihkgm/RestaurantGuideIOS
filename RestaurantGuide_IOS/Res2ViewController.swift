@@ -12,8 +12,11 @@ import Social
 class Res2ViewController: UIViewController {
 
    
+    @IBOutlet var starButtons: [UIButton]!
     
+    @IBOutlet weak var rateView: UILabel!
     @IBOutlet weak var mapView1: MKMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Hasty Market"
@@ -30,6 +33,18 @@ class Res2ViewController: UIViewController {
     }
     
     
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        
+        print("Rated \(sender.tag) stars.")
+                rateView.text = " 'Hasty Market' rated  \(sender.tag) stars."
+                for  button in starButtons {
+                    if button.tag <= sender.tag {
+                        button.setBackgroundImage(UIImage.init(named: "start-selected"), for: .normal)   //selectted
+                    } else {
+                        button.setBackgroundImage(UIImage.init(named: "star-not-selected"), for: .normal)    //not selectted
+                    }
+                }
+    }
     
 
     @IBAction func socialMedia(_ sender: Any) {

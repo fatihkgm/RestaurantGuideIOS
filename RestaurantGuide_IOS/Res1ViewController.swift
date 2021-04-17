@@ -17,7 +17,9 @@ class Res1ViewController: UIViewController {
     
     @IBOutlet weak var mapView: MKMapView!
    
-  
+    @IBOutlet var starButtons: [UIButton]!
+    
+    @IBOutlet weak var rateView: UILabel!
     
     let locationManager = CLLocationManager()
     var regionInMetters: Double  = 10000
@@ -32,7 +34,19 @@ class Res1ViewController: UIViewController {
     }
     
     
-   
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        
+        print("Rated \(sender.tag) stars.")
+                rateView.text = "You rated McDonals \(sender.tag) stars."
+                for  button in starButtons {
+                    if button.tag <= sender.tag {
+                        button.setBackgroundImage(UIImage.init(named: "start-selected"), for: .normal)   //selectted
+                    } else {
+                        button.setBackgroundImage(UIImage.init(named: "star-not-selected"), for: .normal)    //not selectted
+                    }
+                }
+    }
+    
     
 
     
