@@ -11,24 +11,30 @@ import CoreLocation
 import Social
 import MessageUI
 
+
 class Res1ViewController: UIViewController {
 
     
     @IBOutlet weak var mapView: MKMapView!
    
+  
     
     let locationManager = CLLocationManager()
     var regionInMetters: Double  = 10000
+    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "McDonals"
         checkLocationService()
         
-        
-
-        // Do any additional setup after loading the view.
     }
+    
+    
+   
+    
+
     
     @IBAction func emailButtonTapped(_ sender: SAButton) {
         showMailComposer()
