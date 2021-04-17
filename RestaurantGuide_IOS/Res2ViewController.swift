@@ -11,6 +11,8 @@ import Social
 
 class Res2ViewController: UIViewController {
 
+   
+    
     @IBOutlet weak var mapView1: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +28,8 @@ class Res2ViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    
     
 
     @IBAction func socialMedia(_ sender: Any) {
