@@ -11,18 +11,10 @@ class ViewController: UIViewController {
 
     
    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "T25 Team "
+
         // Do any additional setup after loading the view.
-        
-        
     }
-    
-    
 
 }
-

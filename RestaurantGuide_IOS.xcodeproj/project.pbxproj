@@ -30,6 +30,8 @@
 		52D9C43B25EA02A80030402A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52D9C43A25EA02A80030402A /* Assets.xcassets */; };
 		52D9C43E25EA02A80030402A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52D9C43C25EA02A80030402A /* LaunchScreen.storyboard */; };
 		52ED3FCA262A9F1200D2364A /* RateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ED3FC9262A9F1200D2364A /* RateViewController.swift */; };
+		52F9DDBB262C063A000565CF /* AddMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9DDBA262C063A000565CF /* AddMenuViewController.swift */; };
+		52F9DDBF262C0959000565CF /* EditTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9DDBE262C0959000565CF /* EditTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		52D9C43D25EA02A80030402A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52D9C43F25EA02A80030402A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52ED3FC9262A9F1200D2364A /* RateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateViewController.swift; sourceTree = "<group>"; };
+		52F9DDBA262C063A000565CF /* AddMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMenuViewController.swift; sourceTree = "<group>"; };
+		52F9DDBE262C0959000565CF /* EditTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 				52D9C43325EA02A50030402A /* SceneDelegate.swift */,
 				52D9C43525EA02A50030402A /* ViewController.swift */,
 				52D9C43725EA02A50030402A /* Main.storyboard */,
+				52F9DDBA262C063A000565CF /* AddMenuViewController.swift */,
+				52F9DDBE262C0959000565CF /* EditTableViewCell.swift */,
 				52ED3FC9262A9F1200D2364A /* RateViewController.swift */,
 				522881D026277BF300945386 /* SearchTableViewController.swift */,
 				5287F27226238FB8004CF1A4 /* map5ViewController.swift */,
@@ -204,6 +210,7 @@
 				52D9C43625EA02A50030402A /* ViewController.swift in Sources */,
 				527844EC2610F52A008ECB73 /* Res1ViewController.swift in Sources */,
 				5287F26D26237FAB004CF1A4 /* map3ViewController.swift in Sources */,
+				52F9DDBF262C0959000565CF /* EditTableViewCell.swift in Sources */,
 				5287F26726234797004CF1A4 /* MapViewController.swift in Sources */,
 				525E8FC026117909008A1394 /* Res2ViewController.swift in Sources */,
 				5287F27C2623A943004CF1A4 /* T25ViewController.swift in Sources */,
@@ -216,6 +223,7 @@
 				5287F27326238FB8004CF1A4 /* map5ViewController.swift in Sources */,
 				525E8FC326117A87008A1394 /* Res3ViewController.swift in Sources */,
 				5287F27026238AEE004CF1A4 /* Map4ViewController.swift in Sources */,
+				52F9DDBB262C063A000565CF /* AddMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

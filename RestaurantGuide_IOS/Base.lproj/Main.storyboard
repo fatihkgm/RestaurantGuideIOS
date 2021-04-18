@@ -231,6 +231,11 @@
                                     <segue destination="Twz-UT-5B9" kind="show" id="zKB-O9-eON"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckf-QG-8Fh">
+                                <rect key="frame" x="362" y="101" width="35" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="addRestaurant"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -439,6 +444,9 @@ Phone: (416) 596-2231
                                 <rect key="frame" x="20" y="105" width="51" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="add"/>
+                                <connections>
+                                    <segue destination="Xvr-jp-6Ul" kind="show" id="0cZ-Ce-fCr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XHb-h5-qeC"/>
@@ -665,6 +673,9 @@ Phone: (416) 596-2231
                                 <rect key="frame" x="20" y="104" width="51" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="add"/>
+                                <connections>
+                                    <segue destination="Xvr-jp-6Ul" kind="show" id="fUm-Il-Aq3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2NQ-Mh-PIm"/>
@@ -879,6 +890,9 @@ Phone: (416) 596-2231
                                 <rect key="frame" x="20" y="105" width="51" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="add"/>
+                                <connections>
+                                    <segue destination="Xvr-jp-6Ul" kind="show" id="L8G-Da-wVw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xZZ-fa-D6j"/>
@@ -1094,6 +1108,9 @@ Phone: (416) 596-2231
                                 <rect key="frame" x="20" y="105" width="51" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="add"/>
+                                <connections>
+                                    <segue destination="Xvr-jp-6Ul" kind="show" id="AqU-3n-Ua4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YpL-BL-zq6"/>
@@ -1319,20 +1336,131 @@ Phone: (416) 596-2231
             </objects>
             <point key="canvasLocation" x="660.86956521739137" y="718.52678571428567"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="JWK-Ts-0nf">
+        <!--Add Menu View Controller-->
+        <scene sceneID="tSu-XK-XMN">
             <objects>
-                <viewController id="xFO-xw-MVS" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wOF-hj-3Lm">
+                <viewController id="Xvr-jp-6Ul" customClass="AddMenuViewController" customModule="RestaurantGuide_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZCX-mx-PRD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="xaT-TW-Xqd"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nqw-6j-ucP">
+                                <rect key="frame" x="15" y="118" width="384" height="40"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="m3c-yx-hW2">
+                                        <rect key="frame" x="0.0" y="1" width="314" height="38.5"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add Menu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uld-ZP-Zfc">
+                                                <rect key="frame" x="0.0" y="0.0" width="314" height="38"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="38" id="SjS-BQ-oDA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v2a-H7-mbJ">
+                                                <rect key="frame" x="0.0" y="38" width="314" height="0.5"/>
+                                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="0.5" id="vq1-B4-8wU"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4c-9j-oTn">
+                                        <rect key="frame" x="324" y="0.0" width="60" height="40"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="20r-ei-Gd1"/>
+                                            <constraint firstAttribute="width" constant="60" id="vYU-aP-c6D"/>
+                                        </constraints>
+                                        <state key="normal" title="Add">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onClickAddButton:" destination="Xvr-jp-6Ul" eventType="touchUpInside" id="p8l-Fh-A4X"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="q4c-9j-oTn" firstAttribute="centerY" secondItem="nqw-6j-ucP" secondAttribute="centerY" id="dl4-ei-akj"/>
+                                </constraints>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zWa-bg-oRV">
+                                <rect key="frame" x="0.0" y="168" width="414" height="694"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EditTableViewCell" rowHeight="117" id="Dac-Jt-qyD" customClass="EditTableViewCell" customModule="RestaurantGuide_IOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="117"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Dac-Jt-qyD" id="emr-Qb-F5K">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="117"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3XJ-0c-00z">
+                                                    <rect key="frame" x="35" y="48.5" width="41.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8EK-z3-4Kd">
+                                                    <rect key="frame" x="319" y="38.5" width="60" height="40"/>
+                                                    <color key="backgroundColor" red="0.61371242999999998" green="0.10974902659999999" blue="0.1214445606" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="D2H-tz-hMs"/>
+                                                        <constraint firstAttribute="height" constant="40" id="oPP-vn-WFl"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Delete">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="onClickDeleteButton:" destination="Xvr-jp-6Ul" eventType="touchUpInside" id="IZ1-DJ-Z9C"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="3XJ-0c-00z" firstAttribute="centerY" secondItem="emr-Qb-F5K" secondAttribute="centerY" id="5DX-yM-YE6"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="8EK-z3-4Kd" secondAttribute="trailing" constant="15" id="Cng-IT-WiP"/>
+                                                <constraint firstItem="8EK-z3-4Kd" firstAttribute="centerY" secondItem="emr-Qb-F5K" secondAttribute="centerY" id="R0E-W6-ks9"/>
+                                                <constraint firstItem="8EK-z3-4Kd" firstAttribute="centerY" secondItem="emr-Qb-F5K" secondAttribute="centerY" id="S9R-QJ-6GH"/>
+                                                <constraint firstItem="3XJ-0c-00z" firstAttribute="leading" secondItem="emr-Qb-F5K" secondAttribute="leadingMargin" constant="15" id="dg2-5r-S6M"/>
+                                                <constraint firstItem="3XJ-0c-00z" firstAttribute="centerY" secondItem="emr-Qb-F5K" secondAttribute="centerY" id="jOb-4G-4VD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="btnDelete" destination="8EK-z3-4Kd" id="r5S-hO-qmS"/>
+                                            <outlet property="lblName" destination="3XJ-0c-00z" id="lUU-N0-TA7"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Xvr-jp-6Ul" id="FFE-FM-An6"/>
+                                    <outlet property="delegate" destination="Xvr-jp-6Ul" id="cRG-E8-EZt"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tTZ-sw-ric"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zWa-bg-oRV" firstAttribute="top" secondItem="nqw-6j-ucP" secondAttribute="bottom" constant="10" id="D2U-XF-W8K"/>
+                            <constraint firstItem="tTZ-sw-ric" firstAttribute="trailing" secondItem="zWa-bg-oRV" secondAttribute="trailing" id="Sll-Q6-iYW"/>
+                            <constraint firstItem="zWa-bg-oRV" firstAttribute="leading" secondItem="tTZ-sw-ric" secondAttribute="leading" id="VPm-4n-78I"/>
+                            <constraint firstItem="tTZ-sw-ric" firstAttribute="bottom" secondItem="zWa-bg-oRV" secondAttribute="bottom" id="n9E-lm-OXx"/>
+                            <constraint firstItem="tTZ-sw-ric" firstAttribute="trailing" secondItem="nqw-6j-ucP" secondAttribute="trailing" constant="15" id="odV-vs-BK4"/>
+                            <constraint firstItem="nqw-6j-ucP" firstAttribute="leading" secondItem="tTZ-sw-ric" secondAttribute="leading" constant="15" id="ugB-6R-pna"/>
+                            <constraint firstItem="nqw-6j-ucP" firstAttribute="top" secondItem="tTZ-sw-ric" secondAttribute="top" constant="30" id="ztt-ga-4LR"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="qdq-J7-0K7"/>
+                    <connections>
+                        <outlet property="btnAdd" destination="q4c-9j-oTn" id="uea-tC-fcA"/>
+                        <outlet property="tableView" destination="zWa-bg-oRV" id="mMc-yH-Quq"/>
+                        <outlet property="txtInput" destination="uld-ZP-Zfc" id="tcF-GC-WmG"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bwp-zx-5WF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r1r-a1-XD9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1561" y="706"/>
+            <point key="canvasLocation" x="1511.5942028985507" y="730.58035714285711"/>
         </scene>
         <!--Res5 View Controller-->
         <scene sceneID="VTD-oP-8QF">
@@ -1504,6 +1632,9 @@ Phone: (416) 596-2231
                                 <rect key="frame" x="20" y="105" width="51" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="add"/>
+                                <connections>
+                                    <segue destination="Xvr-jp-6Ul" kind="show" id="Rzd-Gr-aZQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="K7E-OH-vS4"/>
@@ -1575,15 +1706,17 @@ Phone: (416) 596-2231
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Yim-r8-qOr"/>
+        <segue reference="Rzd-Gr-aZQ"/>
         <segue reference="MIM-F6-D2d"/>
         <segue reference="dw9-oT-paB"/>
         <segue reference="Nqu-tq-Ctl"/>
         <segue reference="Pdx-Xz-r9n"/>
-        <segue reference="2N7-i8-TTY"/>
-        <segue reference="AWc-tX-1IT"/>
+        <segue reference="p1J-ip-4BG"/>
+        <segue reference="zKB-O9-eON"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="add" width="390" height="380"/>
+        <image name="addRestaurant" width="276" height="237"/>
         <image name="background" width="426.5" height="213"/>
         <image name="backgroundMain" width="406" height="603"/>
         <image name="email" width="512" height="512"/>
@@ -1610,6 +1743,9 @@ Phone: (416) 596-2231
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
