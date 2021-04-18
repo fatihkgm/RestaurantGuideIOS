@@ -32,8 +32,6 @@
 		52ED3FCA262A9F1200D2364A /* RateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ED3FC9262A9F1200D2364A /* RateViewController.swift */; };
 		52F9DDBB262C063A000565CF /* AddMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9DDBA262C063A000565CF /* AddMenuViewController.swift */; };
 		52F9DDBF262C0959000565CF /* EditTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9DDBE262C0959000565CF /* EditTableViewCell.swift */; };
-		52F9DDC5262C1048000565CF /* AddRestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9DDC4262C1048000565CF /* AddRestViewController.swift */; };
-		52F9DDC8262C11A8000565CF /* AddRestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9DDC7262C11A8000565CF /* AddRestTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,8 +62,6 @@
 		52ED3FC9262A9F1200D2364A /* RateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateViewController.swift; sourceTree = "<group>"; };
 		52F9DDBA262C063A000565CF /* AddMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMenuViewController.swift; sourceTree = "<group>"; };
 		52F9DDBE262C0959000565CF /* EditTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTableViewCell.swift; sourceTree = "<group>"; };
-		52F9DDC4262C1048000565CF /* AddRestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRestViewController.swift; sourceTree = "<group>"; };
-		52F9DDC7262C11A8000565CF /* AddRestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRestTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +111,6 @@
 				52D9C43325EA02A50030402A /* SceneDelegate.swift */,
 				52D9C43525EA02A50030402A /* ViewController.swift */,
 				52D9C43725EA02A50030402A /* Main.storyboard */,
-				52F9DDC7262C11A8000565CF /* AddRestTableViewCell.swift */,
-				52F9DDC4262C1048000565CF /* AddRestViewController.swift */,
 				52F9DDBA262C063A000565CF /* AddMenuViewController.swift */,
 				52F9DDBE262C0959000565CF /* EditTableViewCell.swift */,
 				52ED3FC9262A9F1200D2364A /* RateViewController.swift */,
@@ -227,11 +221,9 @@
 				52D9C43425EA02A50030402A /* SceneDelegate.swift in Sources */,
 				525E8FC926117B13008A1394 /* Res5ViewController.swift in Sources */,
 				5287F27326238FB8004CF1A4 /* map5ViewController.swift in Sources */,
-				52F9DDC5262C1048000565CF /* AddRestViewController.swift in Sources */,
 				525E8FC326117A87008A1394 /* Res3ViewController.swift in Sources */,
 				5287F27026238AEE004CF1A4 /* Map4ViewController.swift in Sources */,
 				52F9DDBB262C063A000565CF /* AddMenuViewController.swift in Sources */,
-				52F9DDC8262C11A8000565CF /* AddRestTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

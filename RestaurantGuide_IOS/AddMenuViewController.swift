@@ -17,7 +17,7 @@ class AddMenuViewController: UIViewController {
     var stringArr = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Add Menu"
+        title = "T25 Group"
 
         
     }
