@@ -2,8 +2,8 @@
 //  SAButton.swift
 //  RestaurantGuide_IOS
 //
-//  Created by Fatih on 2021-04-14.
-//
+//  Created by Zac 
+//  Stu Id: 101074878
 
 import UIKit
 
