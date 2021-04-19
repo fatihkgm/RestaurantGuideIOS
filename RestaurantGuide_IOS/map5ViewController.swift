@@ -2,7 +2,7 @@
 //  map5ViewController.swift
 //  RestaurantGuide_IOS
 //
-//  Created by Fatih on 2021-04-11.
+//  Created by Yazan
 //
 
 import UIKit
