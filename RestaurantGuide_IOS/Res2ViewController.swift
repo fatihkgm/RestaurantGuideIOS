@@ -2,7 +2,7 @@
 //  Res2ViewController.swift
 //  RestaurantGuide_IOS
 //
-//  Created by Fatih on 2021-03-28.
+//  Created by Zac on 2021-03-28.
 //
 
 import UIKit
