@@ -2,7 +2,7 @@
 //  map2ViewController.swift
 //  RestaurantGuide_IOS
 //
-//  Created by Yazan
+//  Created by Yazan and Josh
 //
 
 import UIKit
