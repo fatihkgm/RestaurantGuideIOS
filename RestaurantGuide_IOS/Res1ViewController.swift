@@ -2,7 +2,7 @@
 //  Res1ViewController.swift
 //  RestaurantGuide_IOS
 //
-//  Created by Fatih on 2021-03-28.
+//  Created by Zac on 2021-03-28.
 //
 
 import UIKit
@@ -14,6 +14,7 @@ import MessageUI
 
 class Res1ViewController: UIViewController {
 
+    //Outlets 
     
     @IBOutlet weak var mapView: MKMapView!
    
@@ -28,7 +29,7 @@ class Res1ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "McDonals"
+        title = "McDonalds"
         checkLocationService()
         
     }
@@ -54,14 +55,15 @@ class Res1ViewController: UIViewController {
         showMailComposer()
     }
     
-  
+  //social media buttons for facebook and twitter 
+    
     @IBAction func facebookButton(_ sender: Any) {
         
-        let alert = UIAlertController(title: "Share" , message: " Mcdonals at Toronto  !" , preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: "Share" , message: " Mcdonalds at Toronto  !" , preferredStyle: .actionSheet)
         let actionOne = UIAlertAction(title: "Share on Facebook", style: .default) { (action) in
             if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeFacebook) {
                 let post = SLComposeViewController(forServiceType: SLServiceTypeFacebook)!
-                post.setInitialText(" The Mcdonals in this location is awesome guys.")
+                post.setInitialText(" The Mcdonalds in this location is awesome guys.")
                 post.add(UIImage(named: "res1.png"))
                 
                 self.present(post, animated: true, completion: nil)
@@ -73,7 +75,7 @@ class Res1ViewController: UIViewController {
         let actionTwo = UIAlertAction(title: "Share on Twitter", style: .default) { (action) in
             if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeTwitter) {
                 let post = SLComposeViewController(forServiceType: SLServiceTypeTwitter)!
-                post.setInitialText(" The Mcdonals in this location is awesome guys.")
+                post.setInitialText(" The Mcdonalds in this location is awesome guys.")
                 post.add(UIImage(named: "res1.png"))
                 
                 self.present(post, animated: true, completion: nil)
@@ -132,6 +134,8 @@ class Res1ViewController: UIViewController {
         
     }
     
+    //Authorization so app get's permissions
+    
     func checkLocationAuthorization() {
            switch CLLocationManager.authorizationStatus() {
            case .authorizedWhenInUse:
@@ -161,6 +165,8 @@ extension Res1ViewController:CLLocationManagerDelegate,MFMailComposeViewControll
         }
         
         
+    
+    
         func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
             checkLocationAuthorization()
         }
