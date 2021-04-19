@@ -2,8 +2,8 @@
 //  Res3ViewController.swift
 //  RestaurantGuide_IOS
 //
-//  Created by Zac on 2021-03-28.
-//
+//  Created by Zac 
+//  Stu Id: 101074878
 
 import UIKit
 import MapKit
