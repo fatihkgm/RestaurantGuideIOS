@@ -37,7 +37,7 @@ class Res1ViewController: UIViewController {
     @IBAction func buttonTapped(_ sender: UIButton) {
         
         print("Rated \(sender.tag) stars.")
-                rateView.text = "You rated McDonals \(sender.tag) stars."
+                rateView.text = "You rated McDonalds \(sender.tag) stars."
                 for  button in starButtons {
                     if button.tag <= sender.tag {
                         button.setBackgroundImage(UIImage.init(named: "start-selected"), for: .normal)   //selectted

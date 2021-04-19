@@ -534,10 +534,10 @@ Phone: (416) 596-2231
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lMU-p5-iWh">
-                                <rect key="frame" x="48" y="382" width="342" height="233.5"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lMU-p5-iWh">
+                                <rect key="frame" x="49" y="382" width="340" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Some of the city’s best-known Italian restaurants have a cultivated ambiance one step below a private club on nonmembers’ night, which makes Ardo notable for its unfussy sophistication. It’s more for the not-for-tourists set than the social-media influencers.We’ve been growing with our communities and serving quality food at great value ever since. Today, McDonald’s Canada is proud to be one of the world’s leading food service retailers. From coast to coast, we serve delicious choices to more than 2.5 million people in over 1,400 locations every day. We’re also more than just your local restaurant.</string>
+                                <string key="text">We’ve been growing with our communities and serving quality food at great value ever since. Today, McDonald’s Canada is proud to be one of the world’s leading food service retailers. From coast to coast, we serve delicious choices to more than 2.5 million people in over 1,400 locations every day. We’re also more than just your local restaurant.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -751,7 +751,7 @@ Phone: (416) 596-2231
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="u3A-0n-ymT">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="u3A-0n-ymT">
                                 <rect key="frame" x="36" y="393" width="342" height="133"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">When it opened in 2013, the Chase immediately became the city’s most cherished spot for Bay Street schmoozing, with floor-to-ceiling windows offering incredible views of the Financial District. Dishes are a tight mix of pastas, meaty plates and steakhouse classics, like the wedge salad or the tableside-prepared beef tartare.</string>
@@ -1005,7 +1005,7 @@ Phone: (416) 596-2231
                                     <segue destination="Heh-jm-i0N" kind="show" id="MIM-F6-D2d"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Pdc-7R-Fgy">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Pdc-7R-Fgy">
                                 <rect key="frame" x="41" y="373" width="342" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">From the moment it debuted, Miku’s 180-seat dining room has been overrun—an advantage of being in the heart of the new office district south of the Gardiner. The kaiseki menu consists of cleverly combined exotica. One night, the kaiseki’s star course is a tiered plate of sushi: ocean trout with jalapeño and pink grapefruit, toro with funky black truffle, golden-eye snapper with kumquat compote, and shima-aji (mackerel) with okra and a dashi jelly—it was one of the most exciting things to happen to fish since Nemo reunited with his dad.</string>
@@ -1488,7 +1488,7 @@ Phone: (416) 596-2231
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xng-9N-saK">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xng-9N-saK">
                                 <rect key="frame" x="36" y="416" width="342" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Locals point out landmarks to tourists, patient servers snap pics of celebrating couples and everyone oohs and aahs over the view. Honouring Canadian cuisine and ingredients for 23 years has taught the kitchen something about presentation, and the elaborately plated dishes compete with the vistas for sheer beauty. A plump slab of seared Quebec foie gras rests on a sliced cattail-pollen waffle; shards of pink peppercorn and sumac meringue add a colourful, savoury, architectural component. </string>
@@ -1709,13 +1709,13 @@ Phone: (416) 596-2231
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Yim-r8-qOr"/>
-        <segue reference="xkt-74-vcT"/>
+        <segue reference="Rzd-Gr-aZQ"/>
         <segue reference="MIM-F6-D2d"/>
         <segue reference="dw9-oT-paB"/>
         <segue reference="Nqu-tq-Ctl"/>
         <segue reference="Pdx-Xz-r9n"/>
-        <segue reference="SX2-8i-gwU"/>
-        <segue reference="XWe-gE-vH4"/>
+        <segue reference="Ya4-Xe-6Eu"/>
+        <segue reference="pzY-2D-knt"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="add" width="390" height="380"/>
