@@ -2,7 +2,7 @@
 //  MapViewController.swift
 //  RestaurantGuide_IOS
 //
-//  Created by Yazan Siyam
+//  Created by Yazan Siyam & Josh Rooney
 //
 
 import UIKit
